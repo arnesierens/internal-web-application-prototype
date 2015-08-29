@@ -12,16 +12,3 @@
        -o-transition: $property .5s ease;
           transition: $property .5s ease;
 }
-
-@mixin responsive($width) {
-    @if $width == wide-screens {
-        @media only screen and (min-width: $width-large) {
-            @content;
-        }
-    }
-    @else if $width == medium-screens {
-        @media only screen and (min-width: $width-medium) { 
-            @content; 
-        }
-    }
-}

@@ -26,4 +26,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* General */
+body {
+  font: 400 100% 'PT Sans', Helvetica, Arial, sans-serif; }
+
 /*# sourceMappingURL=main.css.map */

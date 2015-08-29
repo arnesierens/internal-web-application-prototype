@@ -4,16 +4,28 @@
 @import 'variables';
 @import 'css3-mixins';
 
+/* clearfix */
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 /* General */
 
 body {
-    font: 400 100% $font-family;
+    font: 400 100% $font-main;
     background-color: #fff;
+    padding-top: 101px;
 }
 
 /* Header */
 
-header {
+header[role="banner"] {
     font-size: 0.875em; /* 14px / 16px */
     height: 100px;
     width: 100%;
@@ -24,7 +36,7 @@ header {
 }
 
 #header-wrapper {
-    max-width: 1100px;
+    max-width: $width-main;
     margin: 0 auto;
 }
 
@@ -138,4 +150,57 @@ nav {
     z-index: 0;
     top: -9px;
     left: 93px;
+}
+
+
+/* Employees section */
+
+#application-wrapper {
+    width: 100%;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid $color-border;
+    font-size: 0.875em; /* 14px / 16px */ 
+    
+    #application {
+        max-width: $width-main;
+        margin: 0 auto;
+        
+        #{$a-tags} {
+            color: $color-accent;
+            text-decoration: none;
+            border-bottom: 1px solid $color-border;
+        }
+        
+        #{$a-tags-hover} {
+            border-bottom-color: $color-accent;
+        }
+    }
+    
+    header {
+        height: 50px;
+        line-height: 50px;
+    }
+}
+
+h2 {
+    font-family: $font-uppercase;
+    font-size: 2em; /* 28px / 14px*/
+    text-transform: uppercase;
+    float:left;
+}
+
+#breadcrumb {
+    float:right;
+    
+    li {
+        display: inline-block;
+        
+        &::after {
+            content: '\00a0/\00a0';
+        }
+        
+        &.last::after {
+            content: '';
+        }
+    }
 }

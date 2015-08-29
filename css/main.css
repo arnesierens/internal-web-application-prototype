@@ -27,15 +27,26 @@ table {
   border-spacing: 0; }
 
 /* Fonts */
+/* Dimensions */
 /* Colors */
 /* Borders */
+/* clearfix */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
 /* General */
 body {
   font: 400 100% "PT Sans", Helvetica, Arial, sans-serif;
-  background-color: #fff; }
+  background-color: #fff;
+  padding-top: 101px; }
 
 /* Header */
-header {
+header[role="banner"] {
   font-size: 0.875em;
   /* 14px / 16px */
   height: 100px;
@@ -138,5 +149,41 @@ nav {
   z-index: 0;
   top: -9px;
   left: 93px; }
+
+/* Employees section */
+#application-wrapper {
+  width: 100%;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 0.875em;
+  /* 14px / 16px */ }
+  #application-wrapper #application {
+    max-width: 1100px;
+    margin: 0 auto; }
+    #application-wrapper #application a, #application-wrapper #application a:link, #application-wrapper #application a:visited, #application-wrapper #application a:focus {
+      color: #594491;
+      text-decoration: none;
+      border-bottom: 1px solid #e5e5e5; }
+    #application-wrapper #application a:hover, #application-wrapper #application a:active {
+      border-bottom-color: #594491; }
+  #application-wrapper header {
+    height: 50px;
+    line-height: 50px; }
+
+h2 {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 2em;
+  /* 28px / 14px*/
+  text-transform: uppercase;
+  float: left; }
+
+#breadcrumb {
+  float: right; }
+  #breadcrumb li {
+    display: inline-block; }
+    #breadcrumb li::after {
+      content: '\00a0/\00a0'; }
+    #breadcrumb li.last::after {
+      content: ''; }
 
 /*# sourceMappingURL=main.css.map */

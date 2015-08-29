@@ -10,47 +10,55 @@
 
 <body>
     <header role="banner">
-        <h1>
-            <a href="/">Intranet</a> 
-        </h1>
-        
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Applications</a>
+        <div id="header-wrapper">
+            <h1>
+                <a href="/">Intranet</a>
+            </h1>
+
+            <nav>
+                <ul class="main-nav">
+                    <li class="main-nav-item">
+                        <a class="main-nav-item-link" href="/">Applications</a>
+
+                        <div class="dropdown">
+                            <ul class="dropdown-list">
+                                <li>
+                                    <a href="#">Employees</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support ticket</a>
+                                </li>
+                                <li>
+                                    <a href="#">Transport</a>
+                                </li>
+                            </ul>
+                        </div> <!-- end .dropdown -->
+                    </li>
                     
-                    <ul>
-                        <li>
-                            <a href="#">Employees</a>
-                        </li>
-                        <li>
-                            <a href="#">Support ticket</a>
-                        </li>
-                        <li>
-                            <a href="#">Transport</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Admin</a>
-                </li>
-                <li>
-                    Help
+                    <li class="main-nav-item">
+                        <a class="main-nav-item-link" href="#">Admin</a>
+                    </li>
                     
-                    <ul>
-                        <li>
-                            <a href="#">Manuals</a>
-                        </li>
-                        <li>
-                            <a href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="#">Contact</a>
-                        </li>   
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                    <li class="main-nav-item">
+                        <a class="main-nav-item-link" href="#">Help</a>
+                        
+                        <div class="dropdown">
+                            <ul class="dropdown-list">
+                                <li>
+                                    <a href="#">Manuals</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>   
+                            </ul>
+                        </div> <!-- end .dropdown -->
+                    </li>
+                </ul>
+            </nav>
+        </div> <!-- end #header-wrapper -->
     </header>
     
 </body>

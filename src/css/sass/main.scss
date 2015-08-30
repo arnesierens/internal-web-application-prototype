@@ -119,6 +119,10 @@ nav {
             text-decoration: none;
             color: $color-main;
             
+            span {
+                padding-right: 10px;
+            }
+            
             &:hover {
                 background-color: #fafafa;
             }

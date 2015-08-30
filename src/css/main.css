@@ -2142,6 +2142,8 @@ nav {
       box-sizing: border-box;
       text-decoration: none;
       color: #6c6c6c; }
+      .dropdown-list li a span {
+        padding-right: 10px; }
       .dropdown-list li a:hover {
         background-color: #fafafa; }
 

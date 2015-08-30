@@ -2,7 +2,6 @@
   "name": "internal-web-application-prototype",
   "version": "0.0.0",
   "dependencies": {
-      "fontawesome": "~4.4.0"
   },
   "homepage": "https://github.com/arnesierens/internal-web-application-prototype",
   "authors": [

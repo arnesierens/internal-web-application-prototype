@@ -2148,7 +2148,9 @@ nav {
     line-height: normal; }
     .dropdown-list li a {
       display: block;
-      padding: 10px 15px;
+      padding: 0 15px;
+      height: 40px;
+      line-height: 40px;
       width: 100%;
       box-sizing: border-box;
       text-decoration: none; }
@@ -2248,8 +2250,9 @@ nav {
 
 h2 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-size: 2em;
-  /* 28px / 14px*/
+  color: #333;
+  font-size: 1.7142857142857142857142857142857em;
+  /* 24px / 14px*/
   text-transform: uppercase;
   float: left; }
 

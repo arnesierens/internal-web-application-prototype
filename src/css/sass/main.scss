@@ -230,24 +230,38 @@ nav {
 
 /* Employees section */
 
-#application-wrapper {
+#application {
     width: 100%;
     background-color: #f8f8f8;
     border-bottom: 1px solid $color-border;
     font-size: 0.875em; /* 14px / 16px */ 
     
-    #application {
+    #application-header {
         max-width: $width-main;
         margin: 0 auto;
-        
+        padding: 0 20px;
+    }
+    
+    #{$a-tags} {
+        color: $color-accent;
+        text-decoration: none;
+        border-bottom: 1px solid $color-border;
+    }
+
+    #{$a-tags-hover} {
+        border-bottom-color: $color-accent;
+    }
+    
+    h2 {
+        float: left;
+        font-family: $font-uppercase;
+        color: $color-title;
+        font-size: 1.7142857142857142857142857142857em; /* 24px / 14px*/
+        text-transform: uppercase;
+
         #{$a-tags} {
-            color: $color-accent;
-            text-decoration: none;
-            border-bottom: 1px solid $color-border;
-        }
-        
-        #{$a-tags-hover} {
-            border-bottom-color: $color-accent;
+            color: $color-title;
+            border-bottom: 0;
         }
     }
     
@@ -255,14 +269,6 @@ nav {
         height: 50px;
         line-height: 50px;
     }
-}
-
-h2 {
-    font-family: $font-uppercase;
-    color: $color-title;
-    font-size: 1.7142857142857142857142857142857em; /* 24px / 14px*/
-    text-transform: uppercase;
-    float:left;
 }
 
 #breadcrumb {

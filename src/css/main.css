@@ -2229,32 +2229,35 @@ nav {
   position: absolute; }
 
 /* Employees section */
-#application-wrapper {
+#application {
   width: 100%;
   background-color: #f8f8f8;
   border-bottom: 1px solid #e5e5e5;
   font-size: 0.875em;
   /* 14px / 16px */ }
-  #application-wrapper #application {
+  #application #application-header {
     max-width: 1100px;
-    margin: 0 auto; }
-    #application-wrapper #application a, #application-wrapper #application a:link, #application-wrapper #application a:visited, #application-wrapper #application a:focus {
-      color: #594491;
-      text-decoration: none;
-      border-bottom: 1px solid #e5e5e5; }
-    #application-wrapper #application a:hover, #application-wrapper #application a:active {
-      border-bottom-color: #594491; }
-  #application-wrapper header {
+    margin: 0 auto;
+    padding: 0 20px; }
+  #application a, #application a:link, #application a:visited, #application a:focus {
+    color: #594491;
+    text-decoration: none;
+    border-bottom: 1px solid #e5e5e5; }
+  #application a:hover, #application a:active {
+    border-bottom-color: #594491; }
+  #application h2 {
+    float: left;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    color: #333;
+    font-size: 1.7142857142857142857142857142857em;
+    /* 24px / 14px*/
+    text-transform: uppercase; }
+    #application h2 a, #application h2 a:link, #application h2 a:visited, #application h2 a:focus {
+      color: #333;
+      border-bottom: 0; }
+  #application header {
     height: 50px;
     line-height: 50px; }
-
-h2 {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #333;
-  font-size: 1.7142857142857142857142857142857em;
-  /* 24px / 14px*/
-  text-transform: uppercase;
-  float: left; }
 
 #breadcrumb {
   float: right; }

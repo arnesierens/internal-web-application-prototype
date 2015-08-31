@@ -2232,12 +2232,13 @@ nav {
 #application {
   width: 100%;
   background-color: #f8f8f8;
-  border-bottom: 1px solid #e5e5e5;
   font-size: 0.875em;
   /* 14px / 16px */ }
   #application #application-header {
     max-width: 1100px;
     margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
     padding: 0 20px; }
   #application a, #application a:link, #application a:visited, #application a:focus {
     color: #594491;
@@ -2255,9 +2256,6 @@ nav {
     #application h2 a, #application h2 a:link, #application h2 a:visited, #application h2 a:focus {
       color: #333;
       border-bottom: 0; }
-  #application header {
-    height: 50px;
-    line-height: 50px; }
 
 #breadcrumb {
   float: right; }
@@ -2267,5 +2265,26 @@ nav {
       content: '\00a0/\00a0'; }
     #breadcrumb li.last::after {
       content: ''; }
+
+/* Employees navigation */
+#application-navigation {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: #fcfcfc;
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5; }
+  #application-navigation ul {
+    text-align: center;
+    padding: 0 20px; }
+    #application-navigation ul li {
+      display: inline-block;
+      margin-right: 30px; }
+
+/* Application content */
+#content-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px; }
 
 /*# sourceMappingURL=main.css.map */

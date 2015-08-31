@@ -233,12 +233,13 @@ nav {
 #application {
     width: 100%;
     background-color: #f8f8f8;
-    border-bottom: 1px solid $color-border;
     font-size: 0.875em; /* 14px / 16px */ 
     
     #application-header {
         max-width: $width-main;
         margin: 0 auto;
+        height: 60px;
+        line-height: 60px;
         padding: 0 20px;
     }
     
@@ -264,11 +265,6 @@ nav {
             border-bottom: 0;
         }
     }
-    
-    header {
-        height: 50px;
-        line-height: 50px;
-    }
 }
 
 #breadcrumb {
@@ -285,4 +281,34 @@ nav {
             content: '';
         }
     }
+}
+
+/* Employees navigation */
+
+#application-navigation {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background-color: #fcfcfc;
+    border-bottom: 1px solid $color-border;
+    border-top: 1px solid $color-border;
+
+    ul {
+        text-align: center;
+        padding: 0 20px;
+        
+         li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+    }
+}
+
+/* Application content */
+
+#content-inner {
+    max-width: $width-main;
+    margin: 0 auto;
+    padding: 40px 20px;
+    
 }

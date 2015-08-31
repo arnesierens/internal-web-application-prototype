@@ -5,7 +5,7 @@
 @import 'css3-mixins';
 @import 'font-awesome';
 
-/* clearfix */
+/* Clearfix */
 
 .clearfix:after {
     visibility: hidden;
@@ -20,34 +20,49 @@
 
 body {
     font: 400 100% $font-main;
+    color: $color-main;
     background-color: #fff;
-    padding-top: 101px;
+    padding-top: 81px; /* height header */
 }
 
 /* Header */
 
 header[role="banner"] {
     font-size: 0.875em; /* 14px / 16px */
-    height: 100px;
+    height: 80px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     border-bottom: 1px solid $color-border;
+    
+    #{$a-tags} {
+        color: $color-main;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    #{$a-tags} {
+        color: $color-main;
+    }
 }
 
 #header-wrapper {
+    height: 40px;
     max-width: $width-main;
     margin: 0 auto;
+    padding: 20px;
 }
 
 h1 a {
-    width: 50px;
-    height: 100px;
+    display: block;
+    height: 40px;
+    width: 40px;
     float: left;
     text-indent: -9999em;
-    background: url(../img/temp-logo.png) left center no-repeat;
-    background-size: 50px;
+    background: url(../img/temp-logo.png) center center no-repeat;
+    background-size: 40px;
+    @include rounded($border-radius);
 }
 
 /* Navigation */
@@ -56,20 +71,19 @@ nav {
     float: left;
     
     .main-nav {
-        margin-left: 50px;
-        height: 50px;
-        margin-top: 25px;
+        margin: 0 40px;
+        height: 40px;
         
         .main-nav-item {
             display: inline-block;
             font-weight: 600;
             position: relative;
-            line-height: 50px;
             
             .main-nav-item-link {
-                text-decoration: none;
-                color: $color-main;
-                padding: 10px 15px;
+                display: block;
+                height: 40px;
+                line-height: 40px;
+                padding: 0 15px;
                 @include rounded($border-radius);
             }
             
@@ -88,21 +102,19 @@ nav {
 /* Sub navigation */
 
 .dropdown {
-    padding-top: 5px;
+    padding-top: 15px;
     display: none;
 }
 
 .dropdown-list {
     height: auto;
     position: absolute;
-    left: 50%;
     width: 200px;
     margin: 0;
     background-color: #fff;
     border: 1px solid $color-border;
     z-index: 1;
     @include rounded($border-radius);
-    transform: translateX(-50%);
     
     li {
         display: block;
@@ -117,7 +129,6 @@ nav {
             width: 100%;
             box-sizing: border-box;
             text-decoration: none;
-            color: $color-main;
             
             span {
                 padding-right: 10px;
@@ -132,7 +143,7 @@ nav {
 }
 
 .dropdown-list:after {
-   content: '';
+    content: '';
     position: absolute;
     border-style: solid;
     border-width: 0 7px 8px;
@@ -141,7 +152,6 @@ nav {
     width: 0;
     z-index: 1;
     top: -8px;
-    left: 93px;
 }
 
 .dropdown-list:before {
@@ -154,9 +164,67 @@ nav {
     width: 0;
     z-index: 0;
     top: -9px;
+    
+}
+
+.dropdown-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-center:after {
     left: 93px;
 }
 
+.dropdown-center:before {
+    left: 93px;
+}
+
+.dropdown-right {
+    right: 0;
+}
+
+.dropdown-right:after {
+    left: 174px;
+}
+
+.dropdown-right:before {
+    left: 174px;
+}
+
+/* Profile */
+
+#user-log-in {
+    float: right;
+    height: 40px;
+    position: relative;
+    
+    &:hover .dropdown {
+        display: block;
+    }
+    
+    img {
+        vertical-align: middle;
+        display: inline-block;
+        height: 39px;
+        width: 39px;
+        border: 1px solid $color-border;
+        @include rounded(50%);
+    }
+}
+
+.user-log-in-username {
+    padding: 0 5px 0 10px;
+}
+
+.user-log-in-angle {
+    font-size: 0.85714285714285714285714285714286em; /* 12px / 14px */
+}
+
+.profile-dropdown {
+    display: none;
+    position: absolute;
+}
 
 /* Employees section */
 

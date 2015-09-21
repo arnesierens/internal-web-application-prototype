@@ -2071,7 +2071,8 @@ header[role="banner"] {
   position: fixed;
   top: 0;
   left: 0;
-  border-bottom: 1px solid #e5e5e5; }
+  border-bottom: 1px solid #e5e5e5;
+  background-color: #fff; }
   header[role="banner"] a, header[role="banner"] a:link, header[role="banner"] a:visited, header[role="banner"] a:focus {
     color: #6c6c6c;
     font-weight: 600;

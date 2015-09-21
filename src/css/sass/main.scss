@@ -35,6 +35,7 @@ header[role="banner"] {
     top: 0;
     left: 0;
     border-bottom: 1px solid $color-border;
+    background-color: #fff;
     
     #{$a-tags} {
         color: $color-main;

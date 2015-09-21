@@ -2,18 +2,12 @@
   "name": "internal-web-application-prototype",
   "version": "0.0.0",
   "dependencies": {
+      "jquery": "~2.1.4"
   },
   "homepage": "https://github.com/arnesierens/internal-web-application-prototype",
   "authors": [
-    "Arne Sierens <arne.srns@gmail.com>"
+    "Arne Sierens <contact@sierensarne.be>"
   ],
   "description": "Prototype of an internal web application for development centres\"",
-  "license": "MIT",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ]
+  "license": "MIT"
 }

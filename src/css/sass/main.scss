@@ -83,7 +83,7 @@ nav {
                 display: block;
                 height: 40px;
                 line-height: 40px;
-                padding: 0 15px;
+                padding: 0 20px;
                 @include rounded($border-radius);
             }
             
@@ -159,6 +159,44 @@ nav {
 
 .dropdown-right:before {
     left: 174px;
+}
+
+/* Search */
+
+div[role="search"] {
+    float: left;
+}
+
+#global-search {
+    position: relative;
+    
+    input {
+        border: 1px solid $color-border;
+        @include rounded($border-radius);
+        box-sizing: border-box;
+        width: 250px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 38px;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+    button {
+        color: $color-main;
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        line-height: 40px;
+        background: transparent;
+        padding: 0 10px;
+        cursor: pointer;
+    }
 }
 
 /* Profile */

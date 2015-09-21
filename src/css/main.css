@@ -2115,7 +2115,7 @@ nav {
         display: block;
         height: 40px;
         line-height: 40px;
-        padding: 0 15px;
+        padding: 0 20px;
         -webkit-border-radius: 3px;
         -moz-border-radius: 3px;
         border-radius: 3px; }
@@ -2197,6 +2197,37 @@ nav {
 
 .dropdown-right:before {
   left: 174px; }
+
+/* Search */
+div[role="search"] {
+  float: left; }
+
+#global-search {
+  position: relative; }
+  #global-search input {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 38px; }
+    #global-search input:focus {
+      outline: 0; }
+  #global-search button {
+    color: #6c6c6c;
+    border: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 40px;
+    line-height: 40px;
+    background: transparent;
+    padding: 0 10px;
+    cursor: pointer; }
 
 /* Profile */
 #user-log-in {

@@ -2131,16 +2131,36 @@ nav {
   display: none; }
 
 .dropdown-list {
-  height: auto;
-  position: absolute;
   width: 200px;
-  margin: 0;
+  height: auto;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   z-index: 1;
+  margin: 0;
+  position: absolute;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
+  .dropdown-list:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 7px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px; }
+  .dropdown-list:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 7px 8px;
+    border-color: #e5e5e5 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    top: -9px; }
   .dropdown-list li {
     display: block;
     border-bottom: 1px solid #e5e5e5;
@@ -2158,28 +2178,6 @@ nav {
         padding-right: 10px; }
       .dropdown-list li a:hover {
         background-color: #fafafa; }
-
-.dropdown-list:after {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 0 7px 8px;
-  border-color: #FFFFFF transparent;
-  display: block;
-  width: 0;
-  z-index: 1;
-  top: -8px; }
-
-.dropdown-list:before {
-  content: '';
-  position: absolute;
-  border-style: solid;
-  border-width: 0 7px 8px;
-  border-color: #e5e5e5 transparent;
-  display: block;
-  width: 0;
-  z-index: 0;
-  top: -9px; }
 
 .dropdown-center {
   left: 50%;

@@ -12,3 +12,38 @@
        -o-transition: $property .5s ease;
           transition: $property .5s ease;
 }
+
+@mixin speech-bubble($width, $height, $background-color) {
+    width: $width;
+    height: $height;
+    background-color: $background-color;
+    border: 1px solid $color-border;
+    z-index: 1;
+    margin: 0;
+    position: absolute;
+    @include rounded($border-radius);
+    
+    &:before {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0 7px 8px;
+        border-color: #FFFFFF transparent;
+        display: block;
+        width: 0;
+        z-index: 1;
+        top: -8px;
+    }
+    
+    &:after {
+        content: '';
+        position: absolute;
+        border-style: solid;
+        border-width: 0 7px 8px;
+        border-color: $color-border transparent;
+        display: block;
+        width: 0;
+        z-index: 0;
+        top: -9px;
+    }
+}

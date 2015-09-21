@@ -2083,7 +2083,7 @@ header[role="banner"] {
   header[role="banner"] a, header[role="banner"] a:link, header[role="banner"] a:visited, header[role="banner"] a:focus {
     color: #6c6c6c; }
 
-#header-wrapper {
+#header-inner {
   height: 40px;
   max-width: 1100px;
   margin: 0 auto;
@@ -2241,11 +2241,11 @@ nav {
     line-height: 60px;
     padding: 0 20px; }
   #application a, #application a:link, #application a:visited, #application a:focus {
-    color: #594491;
+    color: #547EE4;
     text-decoration: none;
     border-bottom: 1px solid #e5e5e5; }
   #application a:hover, #application a:active {
-    border-bottom-color: #594491; }
+    border-bottom-color: #547EE4; }
   #application h2 {
     float: left;
     font-family: "Roboto", Helvetica, Arial, sans-serif;

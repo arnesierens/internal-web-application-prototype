@@ -25,6 +25,17 @@ body {
     padding-top: 81px; /* height header */
 }
 
+.visually-hidden {
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    border: 0;
+}
+
 /* Header */
 
 header[role="banner"] {
@@ -200,12 +211,36 @@ div[role="search"] {
     }
 }
 
-/* Profile */
+/* Notifications, messages and profile icon */
 
-#user-log-in {
+.user-nav {
     float: right;
     height: 40px;
     position: relative;
+}
+
+// TODO: refactor code a, img tag
+
+.user-icon {
+    width: 40px;
+    margin-right: 10px;
+    
+    a {
+        box-sizing: border-box;
+        font-size: 1.0714285714285714285714285714286em; /* 15px / 14px */
+        display: block;
+        line-height: 38px; /* 40px - 2px (border) */
+        text-align: center;
+        border: 1px solid $color-border;
+        @include rounded(50%);
+        
+        &:hover {
+            background-color: #fafafa;
+        }
+    }
+}
+
+#user-log-in {
     
     &:hover .dropdown {
         display: block;
@@ -224,10 +259,6 @@ div[role="search"] {
 
 .user-log-in-username {
     padding: 0 5px 0 10px;
-}
-
-.user-log-in-angle {
-    font-size: 0.85714285714285714285714285714286em; /* 12px / 14px */
 }
 
 .profile-dropdown {

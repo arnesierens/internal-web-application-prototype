@@ -350,3 +350,15 @@ div[role="search"] {
     padding: 40px 20px;
     
 }
+
+/* Footer */
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    border-top: 1px solid $color-border;
+    font-size: 0.875em; /* 14px / 16px */
+    padding: 20px;
+}

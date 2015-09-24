@@ -213,6 +213,13 @@ div[role="search"] {
 
 /* Notifications, messages and profile icon */
 
+.username {
+    float: right;
+    margin-right: 15px;
+    line-height: 40px;
+    color: lighten($color-main, 20%);
+}
+
 .user-nav {
     float: right;
     height: 40px;

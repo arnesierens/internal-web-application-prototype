@@ -2237,6 +2237,12 @@ div[role="search"] {
     cursor: pointer; }
 
 /* Notifications, messages and profile icon */
+.username {
+  float: right;
+  margin-right: 15px;
+  line-height: 40px;
+  color: #9f9f9f; }
+
 .user-nav {
   float: right;
   height: 40px;

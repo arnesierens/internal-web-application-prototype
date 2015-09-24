@@ -2111,33 +2111,36 @@ h1 a {
 /* Navigation */
 nav {
   float: left; }
-  nav .main-nav {
-    margin: 0 40px;
-    height: 40px; }
-    nav .main-nav .main-nav-item {
-      display: inline-block;
-      font-weight: 600;
-      position: relative; }
-      nav .main-nav .main-nav-item .main-nav-item-link {
-        display: block;
-        height: 40px;
-        line-height: 40px;
-        padding: 0 20px;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px; }
-      nav .main-nav .main-nav-item:hover .dropdown {
-        display: block; }
-      nav .main-nav .main-nav-item:hover .main-nav-item-link {
-        color: #fff;
-        background-color: #594491; }
 
-/* Sub navigation */
+.main-nav {
+  margin: 0 40px;
+  height: 40px; }
+
+.main-nav-item {
+  display: inline-block;
+  font-weight: 600;
+  position: relative; }
+  .main-nav-item:hover .dropdown {
+    display: block; }
+  .main-nav-item:hover .main-nav-item-link {
+    color: #fff;
+    background-color: #594491; }
+
+.main-nav-item-link {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+/* Dropdown lists */
 .dropdown {
   padding-top: 15px;
   display: none; }
 
-.dropdown-list {
+.dropdown-nav {
   width: 200px;
   height: auto;
   background-color: #fff;
@@ -2147,8 +2150,10 @@ nav {
   position: absolute;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
-  .dropdown-list:before {
+  border-radius: 3px;
+  left: 50%;
+  transform: translateX(-50%); }
+  .dropdown-nav:before {
     content: '';
     position: absolute;
     border-style: solid;
@@ -2157,8 +2162,9 @@ nav {
     display: block;
     width: 0;
     z-index: 1;
-    top: -8px; }
-  .dropdown-list:after {
+    top: -8px;
+    left: 93px; }
+  .dropdown-nav:after {
     content: '';
     position: absolute;
     border-style: solid;
@@ -2167,43 +2173,62 @@ nav {
     display: block;
     width: 0;
     z-index: 0;
-    top: -9px; }
-  .dropdown-list li {
-    display: block;
-    border-bottom: 1px solid #e5e5e5;
-    width: 100%;
-    line-height: normal; }
-    .dropdown-list li a {
-      display: block;
-      padding: 0 15px;
-      height: 40px;
-      line-height: 40px;
-      width: 100%;
-      box-sizing: border-box;
-      text-decoration: none; }
-      .dropdown-list li a span {
-        padding-right: 10px; }
-      .dropdown-list li a:hover {
-        background-color: #fafafa; }
+    top: -9px;
+    left: 93px; }
 
-.dropdown-center {
-  left: 50%;
-  transform: translateX(-50%); }
-
-.dropdown-center:after {
-  left: 93px; }
-
-.dropdown-center:before {
-  left: 93px; }
-
-.dropdown-right {
+.dropdown-profile {
+  width: 200px;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
   right: 0; }
+  .dropdown-profile:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 7px 8px;
+    border-color: #FFFFFF transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    top: -8px;
+    left: 174px; }
+  .dropdown-profile:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 0 7px 8px;
+    border-color: #e5e5e5 transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    top: -9px;
+    left: 174px; }
 
-.dropdown-right:after {
-  left: 174px; }
+.dropdown-menu li {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  width: 100%;
+  line-height: normal; }
 
-.dropdown-right:before {
-  left: 174px; }
+.dropdown-menu li a {
+  display: block;
+  padding: 0 15px;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  box-sizing: border-box;
+  text-decoration: none; }
+  .dropdown-menu li a span {
+    padding-right: 10px; }
+  .dropdown-menu li a:hover {
+    background-color: #fafafa; }
 
 /* Search */
 div[role="search"] {
@@ -2221,7 +2246,8 @@ div[role="search"] {
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
-    padding-right: 38px; }
+    padding-right: 38px;
+    color: #6c6c6c; }
     #global-search input:focus {
       outline: 0; }
   #global-search button {

@@ -219,20 +219,16 @@ div[role="search"] {
     position: relative;
 }
 
-// TODO: refactor code a, img tag
-
 .user-icon {
     width: 40px;
     margin-right: 10px;
+    padding-right: 5px;
     
     a {
-        box-sizing: border-box;
         font-size: 1.0714285714285714285714285714286em; /* 15px / 14px */
         display: block;
         line-height: 38px; /* 40px - 2px (border) */
-        text-align: center;
-        border: 1px solid $color-border;
-        @include rounded(50%);
+        text-align: center; 
         
         &:hover {
             background-color: #fafafa;
@@ -240,25 +236,37 @@ div[role="search"] {
     }
 }
 
-#user-log-in {
-    
-    &:hover .dropdown {
-        display: block;
-    }
-    
-    img {
-        box-sizing: border-box;
-        vertical-align: middle;
-        display: inline-block;
-        height: 40px;
-        width: 40px;
-        border: 1px solid $color-border;
-        @include rounded(50%);
-    }
+.user-nav-link {
+    box-sizing: border-box;
+    border: 1px solid $color-border;
+    @include rounded(50%);
 }
 
-.user-log-in-username {
-    padding: 0 5px 0 10px;
+.user-icon-number {
+    font-size: 0.78571428571428571428571428571429em; /* 11px / 14px */
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    height: 17px;
+    line-height: 17px;
+    padding: 0 4px;
+    background-color: $color-link;
+    @include rounded($border-radius);
+}
+
+.user-profile:hover .dropdown {
+    display: block;
+}
+    
+.user-profile img {
+    box-sizing: border-box;
+    vertical-align: middle;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border: 1px solid $color-border;
+    @include rounded(50%);
 }
 
 .profile-dropdown {

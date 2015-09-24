@@ -2244,25 +2244,44 @@ div[role="search"] {
 
 .user-icon {
   width: 40px;
-  margin-right: 10px; }
+  margin-right: 10px;
+  padding-right: 5px; }
   .user-icon a {
-    box-sizing: border-box;
     font-size: 1.0714285714285714285714285714286em;
     /* 15px / 14px */
     display: block;
     line-height: 38px;
     /* 40px - 2px (border) */
-    text-align: center;
-    border: 1px solid #e5e5e5;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
+    text-align: center; }
     .user-icon a:hover {
       background-color: #fafafa; }
 
-#user-log-in:hover .dropdown {
+.user-nav-link {
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+.user-icon-number {
+  font-size: 0.78571428571428571428571428571429em;
+  /* 11px / 14px */
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  height: 17px;
+  line-height: 17px;
+  padding: 0 4px;
+  background-color: #547EE4;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+
+.user-profile:hover .dropdown {
   display: block; }
-#user-log-in img {
+
+.user-profile img {
   box-sizing: border-box;
   vertical-align: middle;
   display: inline-block;
@@ -2272,9 +2291,6 @@ div[role="search"] {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%; }
-
-.user-log-in-username {
-  padding: 0 5px 0 10px; }
 
 .profile-dropdown {
   display: none;

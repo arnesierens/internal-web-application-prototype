@@ -2135,50 +2135,22 @@ nav {
   -moz-border-radius: 3px;
   border-radius: 3px; }
 
-/* Dropdown lists */
-.dropdown {
-  padding-top: 15px;
-  display: none; }
-
-.dropdown-nav {
+.dropdown-main-nav {
   width: 200px;
-  height: auto;
-  background-color: #fff;
-  border: 1px solid #e5e5e5;
-  z-index: 1;
-  margin: 0;
-  position: absolute;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   left: 50%;
   transform: translateX(-50%); }
-  .dropdown-nav:before {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 0 7px 8px;
-    border-color: #FFFFFF transparent;
-    display: block;
-    width: 0;
-    z-index: 1;
-    top: -8px;
+  .dropdown-main-nav:before {
     left: 93px; }
-  .dropdown-nav:after {
-    content: '';
-    position: absolute;
-    border-style: solid;
-    border-width: 0 7px 8px;
-    border-color: #e5e5e5 transparent;
-    display: block;
-    width: 0;
-    z-index: 0;
-    top: -9px;
+  .dropdown-main-nav:after {
     left: 93px; }
 
-.dropdown-profile {
-  width: 200px;
-  height: auto;
+/* Dropdown lists */
+.dropdown {
+  padding-top: 20px;
+  display: none; }
+
+.dropdown-wrapper {
+  box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #e5e5e5;
   z-index: 1;
@@ -2186,9 +2158,8 @@ nav {
   position: absolute;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px;
-  right: 0; }
-  .dropdown-profile:before {
+  border-radius: 3px; }
+  .dropdown-wrapper:before {
     content: '';
     position: absolute;
     border-style: solid;
@@ -2197,9 +2168,8 @@ nav {
     display: block;
     width: 0;
     z-index: 1;
-    top: -8px;
-    left: 174px; }
-  .dropdown-profile:after {
+    top: -8px; }
+  .dropdown-wrapper:after {
     content: '';
     position: absolute;
     border-style: solid;
@@ -2208,16 +2178,15 @@ nav {
     display: block;
     width: 0;
     z-index: 0;
-    top: -9px;
-    left: 174px; }
+    top: -9px; }
 
-.dropdown-menu li {
+.dropdown-wrapper li {
   display: block;
   border-bottom: 1px solid #e5e5e5;
   width: 100%;
   line-height: normal; }
 
-.dropdown-menu li a {
+.dropdown-nav li a {
   display: block;
   padding: 0 15px;
   height: 40px;
@@ -2225,14 +2194,15 @@ nav {
   width: 100%;
   box-sizing: border-box;
   text-decoration: none; }
-  .dropdown-menu li a span {
+  .dropdown-nav li a span {
     padding-right: 10px; }
-  .dropdown-menu li a:hover {
+  .dropdown-nav li a:hover {
     background-color: #fafafa; }
 
 /* Search */
 div[role="search"] {
-  float: left; }
+  float: left;
+  position: relative; }
 
 #global-search {
   position: relative; }
@@ -2242,7 +2212,7 @@ div[role="search"] {
     -moz-border-radius: 3px;
     border-radius: 3px;
     box-sizing: border-box;
-    width: 250px;
+    width: 300px;
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
@@ -2262,6 +2232,34 @@ div[role="search"] {
     padding: 0 10px;
     cursor: pointer; }
 
+.dropdown-search {
+  width: 300px; }
+  .dropdown-search:before {
+    left: 12px; }
+  .dropdown-search:after {
+    left: 12px; }
+
+.dropdown-search-list a {
+  display: block;
+  padding: 10px;
+  color: fuchsia; }
+
+.dropdown-search-list-name {
+  display: block; }
+
+.dropdown-search-list-department {
+  font-weight: 300; }
+
+.dropdown-search-list-img {
+  float: left;
+  box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #e5e5e5;
+  margin-right: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
 /* Notifications, messages and profile icon */
 .username {
   float: right;
@@ -2271,7 +2269,6 @@ div[role="search"] {
 
 .user-nav {
   float: right;
-  height: 40px;
   position: relative; }
 
 .user-nav-link {
@@ -2327,9 +2324,13 @@ div[role="search"] {
   -moz-border-radius: 50%;
   border-radius: 50%; }
 
-.profile-dropdown {
-  display: none;
-  position: absolute; }
+.dropdown-profile {
+  width: 200px;
+  right: 0; }
+  .dropdown-profile:before {
+    left: 174px; }
+  .dropdown-profile:after {
+    left: 174px; }
 
 /* Employees section */
 #application {

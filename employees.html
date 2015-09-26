@@ -24,26 +24,28 @@
                         </a>
 
                         <div class="dropdown">
-                            <ul class="dropdown-nav dropdown-menu">
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-users fa-fw"></span>
-                                        Employees
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-ticket fa-fw"></span>
-                                        Support ticket
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <span class="fa fa-bus fa-fw"></span>
-                                        Transport
-                                    </a>
-                                </li>
-                            </ul>
+                            <div class="dropdown-wrapper dropdown-main-nav">
+                                <ul class="dropdown-nav">
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-users fa-fw"></span>
+                                            Employees
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-ticket fa-fw"></span>
+                                            Support ticket
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span class="fa fa-bus fa-fw"></span>
+                                            Transport
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div> <!-- end .dropdown-wrapper -->
                         </div> <!-- end .dropdown -->
                     </li> <!-- end .main-nav-item -->
                     
@@ -55,17 +57,19 @@
                         <a class="main-nav-item-link" href="#">Help</a>
                         
                         <div class="dropdown">
-                            <ul class="dropdown-nav dropdown-menu">
-                                <li>
-                                    <a href="#">Manuals</a>
-                                </li>
-                                <li>
-                                    <a href="#">FAQ</a>
-                                </li>
-                                <li>
-                                    <a href="#">Contact</a>
-                                </li>   
-                            </ul>
+                            <div class="dropdown-wrapper dropdown-main-nav">
+                                <ul class="dropdown-nav">
+                                    <li>
+                                        <a href="#">Manuals</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">FAQ</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Contact</a>
+                                    </li>   
+                                </ul>
+                            </div> <!-- end .dropdown-wrapper -->
                         </div> <!-- end .dropdown -->
                     </li> <!-- end .main-nav-item -->
                 </ul> <!-- end .main-nav -->
@@ -73,42 +77,72 @@
             
             <div role="search">
                 <form action="#" id="global-search">
-                    <input type="text" placeholder="Search users" autocomplete="off" maxlength="100">
+                    <input type="text" id="global-search-field" placeholder="Search users" autocomplete="off" maxlength="100">
                     <button type="submit" aria-label="Search" title="Search users">
                         <span class="fa fa-search fa-fw"></span>
                         <span class="visually-hidden">Search users</span>
                     </button>
                 </form>
+                
+                <div id="dropdown-search" class="dropdown">
+                    <div class="dropdown-wrapper dropdown-search">
+                        <ul class="dropdown-search-list">
+                            <li>
+                                <a href="#" class="clearfix">
+                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                    <span class="dropdown-search-list-name">Arne Sierens</span>
+                                    <span class="dropdown-search-list-department">IT department</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="clearfix">
+                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                    <span class="dropdown-search-list-name">Arne Sierens</span>
+                                    <span class="dropdown-search-list-department">IT department</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="clearfix">
+                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                    <span class="dropdown-search-list-name">Arne Sierens</span>
+                                    <span class="dropdown-search-list-department">IT department</span>
+                                </a>
+                            </li>   
+                        </ul>
+                    </div> <!-- end .dropdown-wrapper -->
+                </div> <!-- end .dropdown -->
             </div> <!-- end search -->
             
             <div class="user-profile user-nav">
-                <a href="#" class="user-nav-link">
+                <a href="#" class="user-nav-link" title="Arne Sierens">
                     <img src="src/img/avatar.png" alt="Arne Sierens">
                 </a>
                 
                 <div class="dropdown">
-                    <ul class="dropdown-profile dropdown-menu">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-user fa-fw"></span>
-                                My profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-gear fa-fw"></span>
-                                My settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-sign-out fa-fw"></span>
-                                Log out
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="dropdown-wrapper dropdown-profile">
+                        <ul class="dropdown-nav">
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-user fa-fw"></span>
+                                    My profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-gear fa-fw"></span>
+                                    My settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-sign-out fa-fw"></span>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- end .dropdown-wrapper -->
                 </div> <!-- end .dropdown -->
-            </div> <!-- end #user-log-in -->
+            </div> <!-- end #user-profile -->
             
             <div id="messages" class="user-icon user-nav">
                 <a href="#" class="user-nav-link">
@@ -194,6 +228,7 @@
     </footer>
     
     <script src="src/components/jquery/dist/jquery.min.js"></script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>
     

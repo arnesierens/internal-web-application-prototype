@@ -2274,26 +2274,24 @@ div[role="search"] {
   height: 40px;
   position: relative; }
 
+.user-nav-link {
+  box-sizing: border-box;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
 .user-icon {
-  width: 40px;
   margin-right: 10px;
-  padding-right: 5px; }
+  padding: 3px 5px 3px 0; }
   .user-icon a {
     font-size: 1.0714285714285714285714285714286em;
     /* 15px / 14px */
     display: block;
-    line-height: 38px;
-    /* 40px - 2px (border) */
-    text-align: center; }
-    .user-icon a:hover {
-      background-color: #fafafa; }
-
-.user-nav-link {
-  box-sizing: border-box;
-  border: 1px solid #e5e5e5;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
+    line-height: 34px;
+    text-align: center;
+    height: 34px;
+    width: 34px;
+    background-color: #e5e5e5; }
 
 .user-icon-number {
   font-size: 0.78571428571428571428571428571429em;
@@ -2312,6 +2310,11 @@ div[role="search"] {
 
 .user-profile:hover .dropdown {
   display: block; }
+
+.user-profile a {
+  display: block;
+  height: 40px;
+  width: 40px; }
 
 .user-profile img {
   box-sizing: border-box;

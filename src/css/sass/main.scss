@@ -205,27 +205,24 @@ div[role="search"] {
     position: relative;
 }
 
+.user-nav-link {
+    box-sizing: border-box;
+    @include rounded(50%);
+}
+
 .user-icon {
-    width: 40px;
     margin-right: 10px;
-    padding-right: 5px;
+    padding: 3px 5px 3px 0;
     
     a {
         font-size: 1.0714285714285714285714285714286em; /* 15px / 14px */
         display: block;
-        line-height: 38px; /* 40px - 2px (border) */
-        text-align: center; 
-        
-        &:hover {
-            background-color: #fafafa;
-        }
+        line-height: 34px;
+        text-align: center;
+        height: 34px;
+        width: 34px;
+        background-color: $color-border;
     }
-}
-
-.user-nav-link {
-    box-sizing: border-box;
-    border: 1px solid $color-border;
-    @include rounded(50%);
 }
 
 .user-icon-number {
@@ -243,6 +240,12 @@ div[role="search"] {
 
 .user-profile:hover .dropdown {
     display: block;
+}
+
+.user-profile a {
+    display: block;
+    height: 40px;
+    width: 40px;
 }
     
 .user-profile img {

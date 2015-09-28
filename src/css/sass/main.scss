@@ -246,7 +246,6 @@ div[role="search"] {
 .dropdown-search-list a {
     display: block;
     padding: 10px;
-    color: fuchsia;
 }
 
 .dropdown-search-list-name {
@@ -287,15 +286,16 @@ div[role="search"] {
 
 .user-icon {
     margin-right: 10px;
-    padding: 3px 5px 3px 0;
+    padding-right: 5px;
     
-    a {
+    a.user-nav-link {
         font-size: 1.0714285714285714285714285714286em; /* 15px / 14px */
         display: block;
         line-height: 34px;
         text-align: center;
         height: 34px;
         width: 34px;
+        margin: 3px 0;
         background-color: $color-border;
     }
 }
@@ -311,10 +311,6 @@ div[role="search"] {
     padding: 0 4px;
     background-color: $color-brand;
     @include rounded($border-radius);
-}
-
-.user-profile:hover .dropdown {
-    display: block;
 }
 
 .user-profile a {
@@ -344,6 +340,45 @@ div[role="search"] {
     &:after {
         left: 174px;
     }
+}
+
+.dropdown-messages {
+    width: 400px;
+    right: 0;
+    
+    &:before {
+        left: 374px;
+    }
+    
+    &:after {
+        left: 374px;
+    }
+}
+
+.dropdown-message-link {
+    display: block;
+    padding: 10px;
+}
+
+.dropdown-message-avatar {
+    float: left;
+    margin-right: 10px;
+
+    img {
+        box-sizing: border-box;
+        height: 40px;
+        width: 40px;
+        border: 1px solid $color-border;
+        @include rounded(50%);
+    }
+}
+
+.dropdown-message-content {
+    font-size: 0.92857142857142857142857142857143em; /* 13px / 14px */
+    font-weight: 300;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 /* Employees section */

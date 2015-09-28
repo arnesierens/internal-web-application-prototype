@@ -2241,8 +2241,7 @@ div[role="search"] {
 
 .dropdown-search-list a {
   display: block;
-  padding: 10px;
-  color: fuchsia; }
+  padding: 10px; }
 
 .dropdown-search-list-name {
   display: block; }
@@ -2279,8 +2278,8 @@ div[role="search"] {
 
 .user-icon {
   margin-right: 10px;
-  padding: 3px 5px 3px 0; }
-  .user-icon a {
+  padding-right: 5px; }
+  .user-icon a.user-nav-link {
     font-size: 1.0714285714285714285714285714286em;
     /* 15px / 14px */
     display: block;
@@ -2288,6 +2287,7 @@ div[role="search"] {
     text-align: center;
     height: 34px;
     width: 34px;
+    margin: 3px 0;
     background-color: #e5e5e5; }
 
 .user-icon-number {
@@ -2304,9 +2304,6 @@ div[role="search"] {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
-
-.user-profile:hover .dropdown {
-  display: block; }
 
 .user-profile a {
   display: block;
@@ -2331,6 +2328,38 @@ div[role="search"] {
     left: 174px; }
   .dropdown-profile:after {
     left: 174px; }
+
+.dropdown-messages {
+  width: 400px;
+  right: 0; }
+  .dropdown-messages:before {
+    left: 374px; }
+  .dropdown-messages:after {
+    left: 374px; }
+
+.dropdown-message-link {
+  display: block;
+  padding: 10px; }
+
+.dropdown-message-avatar {
+  float: left;
+  margin-right: 10px; }
+  .dropdown-message-avatar img {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
+
+.dropdown-message-content {
+  font-size: 0.92857142857142857142857142857143em;
+  /* 13px / 14px */
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 /* Employees section */
 #application {

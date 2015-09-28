@@ -114,11 +114,11 @@
             </div> <!-- end search -->
             
             <div class="user-profile user-nav">
-                <a href="#" class="user-nav-link" title="Arne Sierens">
+                <a href="#" id="header-profile" class="user-nav-link" title="Arne Sierens">
                     <img src="src/img/avatar.png" alt="Arne Sierens">
                 </a>
                 
-                <div class="dropdown">
+                <div id="header-profile-dropdown" class="dropdown">
                     <div class="dropdown-wrapper dropdown-profile">
                         <ul class="dropdown-nav">
                             <li>
@@ -145,22 +145,42 @@
             </div> <!-- end #user-profile -->
             
             <div id="messages" class="user-icon user-nav">
-                <a href="#" class="user-nav-link">
+                <a href="#" id="header-messages" class="user-nav-link" title="Messages">
                     <span class="user-icon-number">5</span>
                     <span class="fa fa-envelope fa-fw"></span>
                     <span class="visually-hidden">Messages</span>
                 </a>
+                
+                <div id="header-messages-dropdown" class="dropdown">
+                    <div class="dropdown-wrapper dropdown-messages">
+                        <ul>    
+                            <li>
+                                <a href="#" class="clearfix dropdown-message-link">
+                                    <div class="dropdown-message-avatar">
+                                        <img src="src/img/avatar.png" alt="Arne Sierens">
+                                    </div>
+                                    <div class="dropdown-message-info">
+                                        <div class="dropdown-message-fullname">Arne Sierens</div>
+                                        <div class="dropdown-message-content">
+                                            Hello! Can you send me those files we talked about? Thanks in advance!
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- end .dropdown-wrapper -->
+                </div> <!-- end .dropdown -->
             </div> <!-- end #messages -->
             
             <div id="notifications" class="user-icon user-nav">
-                <a href="#" class="user-nav-link">
+                <a href="#" class="user-nav-link" title="Notifications">
                     <span class="user-icon-number">3</span>
                     <span class="fa fa-bell fa-fw"></span>
                     <span class="visually-hidden">Notifications</span>
                 </a>
             </div> <!-- end #notifications -->
             
-            <span class="username">Arne Sierens</span>
+            <span class="username" title="Logged in as Arne Sierens">Arne Sierens</span>
         </div> <!-- end #header-wrapper -->
     </header>
     

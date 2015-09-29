@@ -26,7 +26,7 @@ html {
 body {
     font: 400 100% $font-main;
     color: $color-main;
-    background-color: #f8f8f8;
+    background-color: $color-background;
     padding-top: 81px; /* height header */
     margin-bottom: 81px; /* height footer */
 }
@@ -52,7 +52,7 @@ header[role="banner"] {
     top: 0;
     left: 0;
     border-bottom: 1px solid $color-border;
-    background-color: #fff;
+    background-color: $color-background-header;
     
     #{$a-tags} {
         color: $color-main;
@@ -104,7 +104,7 @@ nav {
     }
             
     &:hover .main-nav-item-link {
-        color: #fff;
+        color: $color-background-header;
         background-color: $color-brand;
     }
 }
@@ -140,7 +140,7 @@ nav {
 
 .dropdown-wrapper {
     box-sizing: border-box;
-    background-color: #fff;
+    background-color: $color-background-header;
     border: 1px solid $color-border;
     z-index: 1;
     margin: 0;
@@ -152,7 +152,7 @@ nav {
         position: absolute;
         border-style: solid;
         border-width: 0 7px 8px;
-        border-color: #FFFFFF transparent;
+        border-color: $color-background-header transparent;
         display: block;
         width: 0;
         z-index: 1;
@@ -193,7 +193,7 @@ nav {
     }
 
     &:hover {
-        background-color: #fafafa;
+        background-color: lighten($color-brand, 50%);
     }
 }
 
@@ -311,7 +311,7 @@ div[role="search"] {
     position: absolute;
     top: 0;
     right: 0;
-    color: #fff;
+    color: $color-background-header;
     height: 17px;
     line-height: 17px;
     padding: 0 4px;
@@ -387,7 +387,7 @@ div[role="search"] {
     text-overflow: ellipsis;
 }
 
-/* Employees section */
+/* Application section */
 
 #application {
     width: 100%;
@@ -441,13 +441,13 @@ div[role="search"] {
     }
 }
 
-/* Employees navigation */
+/* Application navigation */
 
 #application-navigation {
     width: 100%;
     height: 40px;
     line-height: 40px;
-    background-color: #eee;
+    background-color: $color-background-application-header;
     border-bottom: 1px solid $color-border;
     border-top: 1px solid $color-border;
 
@@ -468,7 +468,6 @@ div[role="search"] {
     max-width: $width-main;
     margin: 0 auto;
     padding: 40px 20px;
-    
 }
 
 /* Footer */
@@ -478,7 +477,7 @@ footer {
     box-sizing: border-box;
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    background-color: $color-background-header;
     border-top: 1px solid $color-border;
     font-size: 0.875em; /* 14px / 16px */
     line-height: 80px;

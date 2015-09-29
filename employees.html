@@ -77,10 +77,10 @@
             
             <div role="search">
                 <form action="#" id="global-search">
-                    <input type="text" id="global-search-field" placeholder="Search users" autocomplete="off" maxlength="100">
-                    <button type="submit" aria-label="Search" title="Search users">
+                    <input type="text" id="global-search-field" placeholder="Search for users or departments" autocomplete="off" maxlength="100">
+                    <button type="submit" aria-label="Search" title="Search for users or departments">
                         <span class="fa fa-search fa-fw"></span>
-                        <span class="visually-hidden">Search users</span>
+                        <span class="visually-hidden">Search for users or departments</span>
                     </button>
                 </form>
                 
@@ -229,14 +229,34 @@
         
         <div id="content">
             <div id="content-inner">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    In et fermentum lectus. Praesent condimentum suscipit felis, ut tristique risus suscipit a. 
-                    Duis porttitor consectetur erat. Donec orci sapien, cursus a purus et, finibus ornare nibh. 
-                    Sed fermentum eu odio sed iaculis. Sed id posuere ante. Duis blandit lacinia vestibulum. 
-                    Nam in elementum dolor. Vivamus vitae sem sollicitudin, efficitur dolor a, ullamcorper ipsum. 
-                    Aliquam sodales ac orci vitae dignissim. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-                </p>
+                
+                <div class="column-left">
+                    <a href="#" class="button">Create new user</a>
+                    
+                    <form>
+                        <input type="text" placeholder="Search">
+                        
+                        <label for="filter-department">Department</label>
+                        
+                        <select id="filter-department">
+                            <option value="-1">Choose a department</option>
+                            <option value="1">Accountancy</option>
+                            <option value="2">IT department</option>
+                        </select>
+                        
+                        <label>
+                            <input type="checkbox">
+                            Show only removed employees
+                        </label>
+                        
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+                
+                <div class="column-main">
+                    <!-- todo -->
+                </div>
+                
             </div> <!-- end #content-inner -->
         </div> <!-- end #content -->
     </section> <!-- end #application -->

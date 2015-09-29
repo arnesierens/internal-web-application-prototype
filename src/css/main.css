@@ -2055,12 +2055,18 @@ table {
   height: 0; }
 
 /* General */
+html {
+  position: relative;
+  min-height: 100%; }
+
 body {
   font: 400 100% "PT Sans", Helvetica, Arial, sans-serif;
   color: #6c6c6c;
-  background-color: #fff;
+  background-color: #f8f8f8;
   padding-top: 81px;
-  /* height header */ }
+  /* height header */
+  margin-bottom: 81px;
+  /* height footer */ }
 
 .visually-hidden {
   clip: rect(0, 0, 0, 0);
@@ -2364,7 +2370,6 @@ div[role="search"] {
 /* Employees section */
 #application {
   width: 100%;
-  background-color: #f8f8f8;
   font-size: 0.875em;
   /* 14px / 16px */ }
   #application #application-header {
@@ -2422,6 +2427,7 @@ div[role="search"] {
 
 /* Footer */
 footer {
+  height: 81px;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
@@ -2429,6 +2435,11 @@ footer {
   border-top: 1px solid #e5e5e5;
   font-size: 0.875em;
   /* 14px / 16px */
-  padding: 20px; }
+  line-height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+  footer p {
+    padding: 0 20px; }
 
 /*# sourceMappingURL=main.css.map */

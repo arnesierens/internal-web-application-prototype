@@ -1,0 +1,29 @@
+// Font
+$font-main: 'PT Sans', Helvetica, Arial, sans-serif;
+$font-application-title: 'Roboto', Helvetica, Arial, sans-serif;
+
+// Font weights
+$regular: 400;
+$medium: 500;
+$bold: 700;
+
+// Link tags
+$a-tags: 'a, a:link, a:visited, a:focus';
+$a-tags-hover: 'a:hover, a:active';
+
+// Dimensions
+$width-main: 1100px;
+
+// Colors
+$color-main: #6c6c6c;       /* gray */
+$color-brand: #594491;      /* purple */
+$color-link: #547EE4;       /* blue */
+$color-border: #e5e5e5;     /* light gray */
+$color-title: #333;         /* dark gray */
+
+$color-background: #f8f8f8; /* light gray */
+$color-background-header: #fff; /* white */
+$color-background-application-header: #eee; /* light gray */
+
+// Borders
+$border-radius: 3px;

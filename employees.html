@@ -6,7 +6,7 @@
     
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:500' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/application.css">
 </head>
 
 <body>
@@ -66,7 +66,10 @@
                                         <a href="#">FAQ</a>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <a href="#">Sitemap</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Support</a>
                                     </li>   
                                 </ul>
                             </div> <!-- end .dropdown-wrapper -->
@@ -231,30 +234,47 @@
             <div id="content-inner">
                 
                 <div class="column-left">
-                    <a href="#" class="button">Create new user</a>
+                    <a href="#" class="application-button create-employee">
+                        <span class="fa fa-plus-circle fa-fw"></span>
+                        Create new employee
+                    </a>
                     
-                    <form>
-                        <input type="text" placeholder="Search">
+                    <form class="employees-filter">
+                        <div class="employees-filter-item">
+                            <input type="text" placeholder="Search">
+                        </div>
                         
-                        <label for="filter-department">Department</label>
+                        <div class="employees-filter-item">
+                            <label for="filter-department">Department</label>
+
+                            <select id="filter-department">
+                                <option value="-1">Choose a department</option>
+                                <option value="1">Accountancy</option>
+                                <option value="2">IT department</option>
+                            </select>
+                        </div>
                         
-                        <select id="filter-department">
-                            <option value="-1">Choose a department</option>
-                            <option value="1">Accountancy</option>
-                            <option value="2">IT department</option>
-                        </select>
-                        
-                        <label>
-                            <input type="checkbox">
-                            Show only removed employees
-                        </label>
+                        <div class="employees-filter-item">
+                            <label>
+                                <input type="checkbox">
+                                Show only removed employees
+                            </label>
+                        </div>
                         
                         <input type="submit" value="Search">
                     </form>
                 </div>
                 
                 <div class="column-main">
-                    <!-- todo -->
+                    <div class="employees-overview">
+                        <div class="employees-row-header">
+                            <span class="row-header">Surname</span>
+                            <span class="row-header">Name</span>
+                            <span class="row-header">Deparment</span>
+                            <span class="row-header">Email</span>
+                            <span class="row-header">Name</span>
+                        </div>
+                    </div>
                 </div>
                 
             </div> <!-- end #content-inner -->

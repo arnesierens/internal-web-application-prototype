@@ -1,22 +1,18 @@
 // Import other files
 
-@import 'reset';
-@import 'variables';
-@import 'css3-mixins';
-@import 'font-awesome';
+@import 'base/base';
+@import 'vendor/base';
+@import 'utilities/base';
+@import 'components/base';
+@import 'pages/employees';
 
-/* Clearfix */
+// Clearfix
 
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
+.clearfix {
+    @include clearfix();
 }
 
-/* General */
+// General
 
 html {
     position: relative;
@@ -42,9 +38,10 @@ body {
     border: 0;
 }
 
-/* Header */
+// Header
 
 header[role="banner"] {
+    z-index: 100;
     font-size: 0.875em; /* 14px / 16px */
     height: 80px;
     width: 100%;
@@ -83,7 +80,7 @@ h1 a {
     @include rounded($border-radius);
 }
 
-/* Navigation */
+// Navigation
 
 nav {
     float: left;
@@ -131,7 +128,7 @@ nav {
     }
 }
 
-/* Dropdown lists */
+// Dropdown lists
 
 .dropdown {
     padding-top: 20px;
@@ -142,7 +139,7 @@ nav {
     box-sizing: border-box;
     background-color: $color-background-header;
     border: 1px solid $color-border;
-    z-index: 1;
+    z-index: 100;
     margin: 0;
     position: absolute;
     @include rounded($border-radius);
@@ -193,11 +190,12 @@ nav {
     }
 
     &:hover {
-        background-color: lighten($color-brand, 50%);
+        background-color: $color-brand;
+        color: #fff;
     }
 }
 
-/* Search */
+// Search
 
 div[role="search"] {
     float: left;
@@ -271,7 +269,7 @@ div[role="search"] {
     @include rounded(50%);
 }
 
-/* Notifications, messages and profile icon */
+// Notifications, messages and profile icon
 
 .username {
     float: right;
@@ -387,7 +385,7 @@ div[role="search"] {
     text-overflow: ellipsis;
 }
 
-/* Application section */
+// Application section
 
 #application {
     width: 100%;
@@ -413,7 +411,7 @@ div[role="search"] {
     
     h2 {
         float: left;
-        font-family: $font-uppercase;
+        font-family: $font-application-title;
         color: $color-title;
         font-size: 1.7142857142857142857142857142857em; /* 24px / 14px*/
         text-transform: uppercase;
@@ -441,7 +439,7 @@ div[role="search"] {
     }
 }
 
-/* Application navigation */
+// Application navigation
 
 #application-navigation {
     width: 100%;
@@ -462,15 +460,38 @@ div[role="search"] {
     }
 }
 
-/* Application content */
+// Application content
 
 #content-inner {
+    box-sizing: border-box;
     max-width: $width-main;
     margin: 0 auto;
     padding: 40px 20px;
 }
 
-/* Footer */
+// General application styles
+
+#application #content-inner .application-button {
+    position: relative;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: $color-background-header;
+    background-color: $color-link;
+    @include rounded($border-radius);
+    border: 0;
+    
+    &:hover {
+        border: 0;
+    }
+    
+    &:active {
+        top: 1px;
+    }
+}
+
+// Footer
 
 footer {
     height: 81px;

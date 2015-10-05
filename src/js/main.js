@@ -31,6 +31,4 @@ $(document).ready(function() {
             $('#header-messages-dropdown').hide();
         }
     });
-    
-    
 });

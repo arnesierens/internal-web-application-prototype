@@ -1,0 +1,28 @@
+header[role="banner"] {
+    z-index: 100;
+    font-size: 0.875em; /* 14px / 16px */
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid $color-border;
+    background-color: $color-background-header;
+    
+    #{$a-tags} {
+        color: $color-main;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    #{$a-tags} {
+        color: $color-main;
+    }
+}
+
+.header-inner {
+    height: 40px;
+    max-width: $width-main;
+    margin: 0 auto;
+    padding: 20px;
+}

@@ -1,0 +1,17 @@
+footer {
+    height: 81px;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
+    background-color: $color-background-header;
+    border-top: 1px solid $color-border;
+    font-size: 0.875em; /* 14px / 16px */
+    line-height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    p {
+        padding: 0 20px;
+    }
+}

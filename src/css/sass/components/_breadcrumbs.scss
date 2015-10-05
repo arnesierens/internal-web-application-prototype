@@ -1,0 +1,15 @@
+#breadcrumb {
+    float:right;
+    
+    li {
+        display: inline-block;
+        
+        &::after {
+            content: '\00a0/\00a0';
+        }
+        
+        &.last::after {
+            content: '';
+        }
+    }
+}

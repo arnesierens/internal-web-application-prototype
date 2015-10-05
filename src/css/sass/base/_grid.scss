@@ -1,0 +1,19 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    font: 400 100% $font-main;
+    color: $color-main;
+    background-color: $color-background;
+    padding-top: 81px; /* height header */
+    margin-bottom: 81px; /* height footer */
+}
+
+#content-inner {
+    box-sizing: border-box;
+    max-width: $width-main;
+    margin: 0 auto;
+    padding: 40px 20px;
+}

@@ -1,0 +1,11 @@
+.logo {
+    display: block;
+    width: $width-logo;
+    height: $height-logo;
+    float: left;
+    text-indent: -9999em;
+    background: url($url-logo) center center no-repeat;
+    background-size: 40px;
+    @include rounded($border-radius);
+}
+

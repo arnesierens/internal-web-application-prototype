@@ -1,0 +1,34 @@
+// Search
+
+#global-search {
+    position: relative;
+    
+    input {
+        border: 1px solid $color-border;
+        @include rounded($border-radius);
+        box-sizing: border-box;
+        width: 300px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+        padding-right: 38px;
+        color: $color-main;
+
+        &:focus {
+            outline: 0;
+        }
+    }
+    
+    button {
+        color: $color-main;
+        border: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 40px;
+        line-height: 40px;
+        background: transparent;
+        padding: 0 10px;
+        cursor: pointer;
+    }
+}

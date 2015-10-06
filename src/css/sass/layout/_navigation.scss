@@ -5,32 +5,33 @@ nav {
 .main-nav {
     margin: 0 40px;
     height: 40px;
-}
-        
-.main-nav-item {
-    display: inline-block;
-    font-weight: 600;
-    position: relative;
     
-    &:hover .dropdown {
-        display: block;
+    > li {
+        display: inline-block;
+        position: relative;
+        font-weight: $bold;
+        
+        &:hover .dropdown {
+            display: block;
+        }
+        
+        &:hover > a {
+            color: $color-background-header;
+            background-color: $color-brand;
+        }
+        
+        > a {
+            display: block;
+            height: $height-main-nav;
+            line-height: $height-main-nav;
+            padding: 0 $padding-main-horizontal;
+            color: $color-main;
+            @include rounded($border-radius);
+        }
     }
-            
-    &:hover .main-nav-item-link {
-        color: $color-background-header;
-        background-color: $color-brand;
-    }
-}
-            
-.main-nav-item-link {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    padding: 0 20px;
-    @include rounded($border-radius);
 }
 
-#application-navigation {
+/*#application-navigation {
     width: 100%;
     height: 40px;
     line-height: 40px;
@@ -47,4 +48,4 @@ nav {
             margin-right: 30px;
         }
     }
-}
+}*/

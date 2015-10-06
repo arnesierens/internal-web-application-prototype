@@ -1,0 +1,23 @@
+html {
+    position: relative;
+    min-height: 100%;
+    font: $regular 100% $font-main;
+    color: $color-main;
+}
+
+body {
+    background-color: $color-background;
+    padding-top: $height-header;
+    margin-bottom: $height-footer;
+}
+
+a {
+    text-decoration: none;
+}
+
+#content {
+    box-sizing: border-box;
+    max-width: $width-main;
+    margin: 0 auto;
+    padding: $padding-main-vertical $padding-main-horizontal;
+}

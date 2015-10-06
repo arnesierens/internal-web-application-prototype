@@ -13,17 +13,17 @@
     <header role="banner">
         <div class="header-inner">
             <h1>
-                <a href="/">Intranet</a>
+                <a href="/" class="logo">Intranet</a>
             </h1>
 
             <nav>
                 <ul class="main-nav">
-                    <li class="main-nav-item">
-                        <a class="main-nav-item-link" href="/">
+                    <li>
+                        <a href="/">
                             Applications
                         </a>
 
-                        <div class="dropdown">
+                        <div class="dropdown dropdown-main">
                             <div class="dropdown-wrapper dropdown-main-nav">
                                 <ul class="dropdown-nav">
                                     <li>
@@ -49,14 +49,14 @@
                         </div> <!-- end .dropdown -->
                     </li> <!-- end .main-nav-item -->
                     
-                    <li class="main-nav-item">
-                        <a class="main-nav-item-link" href="#">Admin</a>
+                    <li>
+                        <a href="#">Admin</a>
                     </li>
                     
-                    <li class="main-nav-item">
-                        <a class="main-nav-item-link" href="#">Help</a>
+                    <li>
+                        <a href="#">Help</a>
                         
-                        <div class="dropdown">
+                        <div class="dropdown dropdown-main">
                             <div class="dropdown-wrapper dropdown-main-nav">
                                 <ul class="dropdown-nav">
                                     <li>
@@ -87,7 +87,7 @@
                     </button>
                 </form>
                 
-                <div id="dropdown-search" class="dropdown">
+                <div id="dropdown-search" class="dropdown dropdown-main">
                     <div class="dropdown-wrapper dropdown-search">
                         <ul class="dropdown-search-list">
                             <li>
@@ -121,7 +121,7 @@
                     <img src="src/img/avatar.png" alt="Arne Sierens">
                 </a>
                 
-                <div id="header-profile-dropdown" class="dropdown">
+                <div id="header-profile-dropdown" class="dropdown dropdown-main">
                     <div class="dropdown-wrapper dropdown-profile">
                         <ul class="dropdown-nav">
                             <li>
@@ -231,53 +231,49 @@
         </div> <!-- end #application-navigation -->
         
         <div id="content">
-            <div id="content-inner">
-                
-                <div class="column-left">
-                    <a href="#" class="application-button create-employee">
-                        <span class="fa fa-plus-circle fa-fw"></span>
-                        Create new employee
-                    </a>
-                    
-                    <form class="employees-filter">
-                        <div class="employees-filter-item">
-                            <input type="text" placeholder="Search">
-                        </div>
-                        
-                        <div class="employees-filter-item">
-                            <label for="filter-department">Department</label>
+            <div class="column-left">
+                <a href="#" class="application-button create-employee">
+                    <span class="fa fa-plus-circle fa-fw"></span>
+                    Create new employee
+                </a>
 
-                            <select id="filter-department">
-                                <option value="-1">Choose a department</option>
-                                <option value="1">Accountancy</option>
-                                <option value="2">IT department</option>
-                            </select>
-                        </div>
-                        
-                        <div class="employees-filter-item">
-                            <label>
-                                <input type="checkbox">
-                                Show only removed employees
-                            </label>
-                        </div>
-                        
-                        <input type="submit" value="Search">
-                    </form>
-                </div>
-                
-                <div class="column-main">
-                    <div class="employees-overview">
-                        <div class="employees-row-header">
-                            <span class="row-header">Surname</span>
-                            <span class="row-header">Name</span>
-                            <span class="row-header">Deparment</span>
-                            <span class="row-header">Email</span>
-                            <span class="row-header">Name</span>
-                        </div>
+                <form class="employees-filter">
+                    <div class="employees-filter-item">
+                        <input type="text" placeholder="Search">
+                    </div>
+
+                    <div class="employees-filter-item">
+                        <label for="filter-department">Department</label>
+
+                        <select id="filter-department">
+                            <option value="-1">Choose a department</option>
+                            <option value="1">Accountancy</option>
+                            <option value="2">IT department</option>
+                        </select>
+                    </div>
+
+                    <div class="employees-filter-item">
+                        <label>
+                            <input type="checkbox">
+                            Show only removed employees
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+
+            <div class="column-main">
+                <div class="employees-overview">
+                    <div class="employees-row-header">
+                        <span class="row-header">Surname</span>
+                        <span class="row-header">Name</span>
+                        <span class="row-header">Deparment</span>
+                        <span class="row-header">Email</span>
+                        <span class="row-header">Name</span>
                     </div>
                 </div>
-                
-            </div> <!-- end #content-inner -->
+            </div>    
         </div> <!-- end #content -->
     </section> <!-- end #application -->
     

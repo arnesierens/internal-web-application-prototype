@@ -1,3 +1,13 @@
+.dropdown {
+    display: none;
+}
+
+.dropdown-main {
+     padding-top: 20px;
+}
+
+/*
+
 .dropdown-main-nav {
     width: 200px;
     left: 50%;
@@ -10,11 +20,6 @@
     &:after {
         left: 93px;
     }
-}
-
-.dropdown {
-    padding-top: 20px;
-    display: none;
 }
 
 .dropdown-wrapper {
@@ -163,9 +168,9 @@ div[role="search"] {
 }
 
 .dropdown-message-content {
-    font-size: 0.92857142857142857142857142857143em; /* 13px / 14px */
+    font-size: 0.92857142857142857142857142857143em;  13px / 14px 
     font-weight: 300;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+}*/

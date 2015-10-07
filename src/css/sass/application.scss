@@ -1,5 +1,3 @@
-// Imports
-
 // Vendors
 @import 'vendor/font-awesome';
 
@@ -15,6 +13,7 @@
 @import 'components/logos';
 @import 'components/headings';
 @import 'components/dropdowns';
+@import 'components/searchboxes';
 
 // Layout
 @import 'layout/main';
@@ -25,89 +24,3 @@
 
 // Pages
 //@import 'pages/employees';
-
-// Notifications, messages and profile icon
-
-/*.username {
-    float: right;
-    margin-right: 15px;
-    line-height: 40px;
-    color: lighten($color-main, 20%);
-}
-
-.user-nav {
-    float: right;
-    position: relative;
-}
-
-.user-nav-link {
-    box-sizing: border-box;
-    @include rounded(50%);
-}
-
-.user-icon {
-    margin-right: 10px;
-    padding-right: 5px;
-    
-    a.user-nav-link {
-        font-size: 1.0714285714285714285714285714286em;  15px / 14px 
-        display: block;
-        line-height: 34px;
-        text-align: center;
-        height: 34px;
-        width: 34px;
-        margin: 3px 0;
-        background-color: $color-border;
-    }
-}
-
-.user-icon-number {
-    font-size: 0.78571428571428571428571428571429em;  11px / 14px 
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: $color-background-header;
-    height: 17px;
-    line-height: 17px;
-    padding: 0 4px;
-    background-color: $color-brand;
-    @include rounded($border-radius);
-}
-
-.user-profile a {
-    display: block;
-    height: 40px;
-    width: 40px;
-}
-    
-.user-profile img {
-    box-sizing: border-box;
-    vertical-align: middle;
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    border: 1px solid $color-border;
-    @include rounded(50%);
-}
-
-// General application styles
-
-#application #content-inner .application-button {
-    position: relative;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    color: $color-background-header;
-    background-color: $color-link;
-    @include rounded($border-radius);
-    border: 0;
-    
-    &:hover {
-        border: 0;
-    }
-    
-    &:active {
-        top: 1px;
-    }
-}*/

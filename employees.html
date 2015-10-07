@@ -17,37 +17,35 @@
             </h1>
 
             <nav>
-                <ul class="main-nav">
+                <ul class="nav-main">
                     <li>
                         <a href="/">
                             Applications
                         </a>
 
-                        <div class="dropdown dropdown-main">
-                            <div class="dropdown-wrapper dropdown-main-nav">
-                                <ul class="dropdown-nav">
-                                    <li>
-                                        <a href="#">
-                                            <span class="fa fa-users fa-fw"></span>
-                                            Employees
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="fa fa-ticket fa-fw"></span>
-                                            Support ticket
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <span class="fa fa-bus fa-fw"></span>
-                                            Transport
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div> <!-- end .dropdown-wrapper -->
-                        </div> <!-- end .dropdown -->
-                    </li> <!-- end .main-nav-item -->
+                        <div class="dropdown-wrapper">
+                            <ul class="dropdown dropdown-nav-main">
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-users fa-fw"></span>
+                                        Employees
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-ticket fa-fw"></span>
+                                        Support ticket
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-bus fa-fw"></span>
+                                        Transport
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end .dropdown-wrapper -->
+                    </li> <!-- end .nav-main-item -->
                     
                     <li>
                         <a href="#">Admin</a>
@@ -56,74 +54,108 @@
                     <li>
                         <a href="#">Help</a>
                         
-                        <div class="dropdown dropdown-main">
-                            <div class="dropdown-wrapper dropdown-main-nav">
-                                <ul class="dropdown-nav">
-                                    <li>
-                                        <a href="#">Manuals</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">FAQ</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sitemap</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Support</a>
-                                    </li>   
-                                </ul>
-                            </div> <!-- end .dropdown-wrapper -->
+                        <div class="dropdown-wrapper">
+                            <ul class="dropdown dropdown-nav-main">
+                                <li>
+                                    <a href="#">Manuals</a>
+                                </li>
+                                <li>
+                                    <a href="#">FAQ</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sitemap</a>
+                                </li>
+                                <li>
+                                    <a href="#">Support</a>
+                                </li>   
+                            </ul>
                         </div> <!-- end .dropdown -->
-                    </li> <!-- end .main-nav-item -->
-                </ul> <!-- end .main-nav -->
+                    </li>
+                </ul> <!-- end .nav-main -->
             </nav>
             
             <div role="search">
-                <form action="#" id="global-search">
-                    <input type="text" id="global-search-field" placeholder="Search for users or departments" autocomplete="off" maxlength="100">
+                <form action="#" class="form-search-main">
+                    <input type="text" id="js-search-main" placeholder="Search for users or departments" autocomplete="off" maxlength="100">
                     <button type="submit" aria-label="Search" title="Search for users or departments">
                         <span class="fa fa-search fa-fw"></span>
                         <span class="visually-hidden">Search for users or departments</span>
                     </button>
                 </form>
                 
-                <div id="dropdown-search" class="dropdown dropdown-main">
-                    <div class="dropdown-wrapper dropdown-search">
-                        <ul class="dropdown-search-list">
+                <div class="dropdown-wrapper">
+                    <ul class="dropdown">
+                        <li>
+                            <a href="#" class="clearfix">
+                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                <span class="dropdown-search-list-name">Arne Sierens</span>
+                                <span class="dropdown-search-list-department">IT department</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                <span class="dropdown-search-list-name">Arne Sierens</span>
+                                <span class="dropdown-search-list-department">IT department</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="clearfix">
+                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                <span class="dropdown-search-list-name">Arne Sierens</span>
+                                <span class="dropdown-search-list-department">IT department</span>
+                            </a>
+                        </li>   
+                    </ul>
+                </div> <!-- end .dropdown-wrapper -->
+            </div> <!-- end role=["search"] -->
+            
+            <ul class="nav-main-user">
+                <li>
+                    <span class="username" title="Logged in as Arne Sierens">Arne Sierens</span>
+                </li>
+                
+                <li class="nav-main-user-icon">
+                    <a href="#" title="Notifications">
+                        <span class="user-icon-number">3</span>
+                        <span class="fa fa-bell fa-fw"></span>
+                        <span class="visually-hidden">Notifications</span>
+                    </a>
+                </li>
+                
+                <li class="nav-main-user-icon">
+                    <a href="#" title="Messages">
+                        <span class="user-icon-number">5</span>
+                        <span class="fa fa-envelope fa-fw"></span>
+                        <span class="visually-hidden">Messages</span>
+                    </a>
+
+                    <div class="dropdown-wrapper">
+                        <ul class="dropdown">  
                             <li>
-                                <a href="#" class="clearfix">
-                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                    <span class="dropdown-search-list-name">Arne Sierens</span>
-                                    <span class="dropdown-search-list-department">IT department</span>
+                                <a href="#" class="clearfix dropdown-message-link">
+                                    <div class="dropdown-message-avatar">
+                                        <img src="src/img/avatar.png" alt="Arne Sierens">
+                                    </div>
+                                    <div class="dropdown-message-info">
+                                        <div class="dropdown-message-fullname">Arne Sierens</div>
+                                        <div class="dropdown-message-content">
+                                            Hello! Can you send me those files we talked about? Thanks in advance!
+                                        </div>
+                                    </div>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                    <span class="dropdown-search-list-name">Arne Sierens</span>
-                                    <span class="dropdown-search-list-department">IT department</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="clearfix">
-                                    <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                    <span class="dropdown-search-list-name">Arne Sierens</span>
-                                    <span class="dropdown-search-list-department">IT department</span>
-                                </a>
-                            </li>   
                         </ul>
                     </div> <!-- end .dropdown-wrapper -->
-                </div> <!-- end .dropdown -->
-            </div> <!-- end search -->
-            
-            <div class="user-profile user-nav">
-                <a href="#" id="header-profile" class="user-nav-link" title="Arne Sierens">
-                    <img src="src/img/avatar.png" alt="Arne Sierens">
-                </a>
+                </li>
                 
-                <div id="header-profile-dropdown" class="dropdown dropdown-main">
-                    <div class="dropdown-wrapper dropdown-profile">
-                        <ul class="dropdown-nav">
+                <li>
+                    <a href="#" class="nav-main-user-profile" title="Arne Sierens">
+                        <img src="src/img/avatar.png" alt="Arne Sierens">
+                    </a>
+
+                    <div class="dropdown-wrapper">
+                        <ul class="dropdown">
                             <li>
                                 <a href="#">
                                     <span class="fa fa-user fa-fw"></span>
@@ -144,46 +176,7 @@
                             </li>
                         </ul>
                     </div> <!-- end .dropdown-wrapper -->
-                </div> <!-- end .dropdown -->
-            </div> <!-- end #user-profile -->
-            
-            <div id="messages" class="user-icon user-nav">
-                <a href="#" id="header-messages" class="user-nav-link" title="Messages">
-                    <span class="user-icon-number">5</span>
-                    <span class="fa fa-envelope fa-fw"></span>
-                    <span class="visually-hidden">Messages</span>
-                </a>
-                
-                <div id="header-messages-dropdown" class="dropdown">
-                    <div class="dropdown-wrapper dropdown-messages">
-                        <ul>    
-                            <li>
-                                <a href="#" class="clearfix dropdown-message-link">
-                                    <div class="dropdown-message-avatar">
-                                        <img src="src/img/avatar.png" alt="Arne Sierens">
-                                    </div>
-                                    <div class="dropdown-message-info">
-                                        <div class="dropdown-message-fullname">Arne Sierens</div>
-                                        <div class="dropdown-message-content">
-                                            Hello! Can you send me those files we talked about? Thanks in advance!
-                                        </div>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div> <!-- end .dropdown-wrapper -->
-                </div> <!-- end .dropdown -->
-            </div> <!-- end #messages -->
-            
-            <div id="notifications" class="user-icon user-nav">
-                <a href="#" class="user-nav-link" title="Notifications">
-                    <span class="user-icon-number">3</span>
-                    <span class="fa fa-bell fa-fw"></span>
-                    <span class="visually-hidden">Notifications</span>
-                </a>
-            </div> <!-- end #notifications -->
-            
-            <span class="username" title="Logged in as Arne Sierens">Arne Sierens</span>
+                </li>
         </div> <!-- end #header-wrapper -->
     </header>
     

@@ -1,28 +1,9 @@
-.dropdown {
-    display: none;
-}
-
-.dropdown-main {
-     padding-top: 20px;
-}
-
-/*
-
-.dropdown-main-nav {
-    width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    
-    &:before {
-        left: 93px;
-    }
-    
-    &:after {
-        left: 93px;
-    }
-}
-
 .dropdown-wrapper {
+    display: none;
+    padding-top: 20px;
+}
+
+.dropdown {
     box-sizing: border-box;
     background-color: $color-background-header;
     border: 1px solid $color-border;
@@ -54,42 +35,58 @@
         z-index: 0;
         top: -9px;
     }
-}
-
-.dropdown-wrapper li {
-    display: block;
-    border-bottom: 1px solid $color-border;
-    width: 100%;
-    line-height: normal;
-}
-
-.dropdown-nav li a {
-    display: block;
-    padding: 0 15px;
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    box-sizing: border-box;
-    text-decoration: none;
-
-    span {
-        padding-right: 10px;
-    }
-
-    &:hover {
-        background-color: $color-brand;
-        color: #fff;
+    
+    > li {
+        display: block;
+        border-bottom: 1px solid $color-border;
+        width: 100%;
+        line-height: normal;
+        
+        &:last-child {
+            border: 0;
+        }
     }
 }
 
-// Search
+// Dropdown main navigation
 
-div[role="search"] {
-    float: left;
-    position: relative;
+.dropdown-nav-main {
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    &:before {
+        left: 93px;
+    }
+    
+    &:after {
+        left: 93px;
+    }
+    
+    a {
+        color: $color-main;
+        display: block;
+        padding: 0 15px;
+        height: 40px;
+        line-height: 40px;
+        width: 100%;
+        box-sizing: border-box;
+        text-decoration: none;
+
+        span {
+            padding-right: 10px;
+        }
+
+        &:hover {
+            background-color: $color-brand;
+            color: #fff;
+        }
+    }
 }
 
-.dropdown-search {
+// Dropdown search
+
+/*.dropdown-search {
     width: 300px;
     
     &:before {

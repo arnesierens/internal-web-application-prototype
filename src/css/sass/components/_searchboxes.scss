@@ -1,6 +1,9 @@
-// Search
+div[role="search"] {
+    float: left;
+    position: relative;
+}
 
-#global-search {
+.form-search-main {
     position: relative;
     
     input {
@@ -19,7 +22,7 @@
         }
     }
     
-    button {
+    > button {
         color: $color-main;
         border: 0;
         position: absolute;

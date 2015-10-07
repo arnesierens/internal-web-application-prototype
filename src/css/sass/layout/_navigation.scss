@@ -1,8 +1,10 @@
+// Main navigation
+
 nav {
     float: left;
 }
     
-.main-nav {
+.nav-main {
     margin: 0 40px;
     height: 40px;
     
@@ -11,7 +13,7 @@ nav {
         position: relative;
         font-weight: $bold;
         
-        &:hover .dropdown {
+        &:hover .dropdown-wrapper {
             display: block;
         }
         
@@ -29,6 +31,74 @@ nav {
             @include rounded($border-radius);
         }
     }
+}
+
+// Main user navigation
+
+.nav-main-user {
+    float: right;
+    
+    > li {
+        float: left;
+        position: relative;
+        
+        > a {
+            box-sizing: border-box;
+            @include rounded(50%);
+        }
+    }
+}
+
+.username {
+    margin-right: 15px;
+    line-height: 40px;
+    color: lighten($color-main, 20%);
+}
+
+.nav-main-user-profile {
+    display: block;
+    height: 40px;
+    width: 40px;
+    
+    > img {
+        position: relative;
+        box-sizing: border-box;
+        vertical-align: middle;
+        height: 40px;
+        width: 40px;
+        border: 1px solid $color-border;
+        @include rounded(50%);
+    }
+}
+
+.nav-main-user-icon {
+    margin-right: 10px;
+    padding-right: 5px;
+    
+    > a {
+        color: $color-main;
+        font-size: 1.0714285714285714285714285714286em;  /* 15px / 14px */
+        display: block;
+        line-height: 34px;
+        text-align: center;
+        height: 34px;
+        width: 34px;
+        margin: 3px 0;
+        background-color: $color-border;
+    }
+}
+
+.user-icon-number {
+    font-size: 0.78571428571428571428571428571429em;  /* 11px / 14px */
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $color-background-header;
+    height: 17px;
+    line-height: 17px;
+    padding: 0 4px;
+    background-color: $color-brand;
+    @include rounded($border-radius);
 }
 
 /*#application-navigation {

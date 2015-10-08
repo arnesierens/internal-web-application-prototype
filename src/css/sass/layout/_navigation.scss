@@ -28,6 +28,7 @@ nav {
             line-height: $height-main-nav;
             padding: 0 $padding-main-horizontal;
             color: $color-main;
+            
             @include rounded($border-radius);
         }
     }
@@ -101,21 +102,26 @@ nav {
     @include rounded($border-radius);
 }
 
-/*#application-navigation {
+// Application navigation
+
+.application-navigation {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
     background-color: $color-background-application-header;
     border-bottom: 1px solid $color-border;
     border-top: 1px solid $color-border;
+    padding: 10px 0;
 
-    ul {
+    > ul {
         text-align: center;
         padding: 0 20px;
         
-         li {
+        > li {
             display: inline-block;
-            margin-right: 30px;
+            line-height: 20px;
+        }
+        
+        > li + li {
+            margin-left: 30px;
         }
     }
-}*/
+}

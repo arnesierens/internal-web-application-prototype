@@ -116,7 +116,7 @@
                 </li>
                 
                 <li class="nav-main-user-icon">
-                    <a href="#" title="Notifications">
+                    <a href="#" id="js-notifications-main" title="Notifications">
                         <span class="user-icon-number">3</span>
                         <span class="fa fa-bell fa-fw"></span>
                         <span class="visually-hidden">Notifications</span>
@@ -124,7 +124,7 @@
                 </li>
                 
                 <li class="nav-main-user-icon">
-                    <a href="#" title="Messages">
+                    <a href="#" id="js-messages-main" title="Messages">
                         <span class="user-icon-number">5</span>
                         <span class="fa fa-envelope fa-fw"></span>
                         <span class="visually-hidden">Messages</span>
@@ -150,7 +150,7 @@
                 </li>
                 
                 <li>
-                    <a href="#" class="nav-main-user-profile" title="Arne Sierens">
+                    <a href="#" id="js-user-profile" class="nav-main-user-profile" title="Arne Sierens">
                         <img src="src/img/avatar.png" alt="Arne Sierens">
                     </a>
 
@@ -181,26 +181,26 @@
     </header>
     
     
-    <section id="application">
-        <div id="application-header">
+    <section class="application">
+        <div class="application-header">
 
             <header class="clearfix">
-                <h2>
+                <h2 class="application-header-title">
                     <a href="#">Employees</a>
                 </h2>
 
-                <ul id="breadcrumb">
+                <ul class="breadcrumb breadcrumb-header">
                     <li>
                         <a href="#">Home</a>
                     </li>
-                    <li class="last">
+                    <li>
                         Employees
                     </li>
                 </ul>
             </header>
         </div> <!-- end #application-header -->
         
-        <div id="application-navigation">
+        <div class="application-navigation">
             <ul>
                 <li>
                     <a href="#">Settings</a>
@@ -223,9 +223,9 @@
             </ul>
         </div> <!-- end #application-navigation -->
         
-        <div id="content">
+        <div class="application-content">
             <div class="column-left">
-                <a href="#" class="application-button create-employee">
+                <a href="#" class="button button-action">
                     <span class="fa fa-plus-circle fa-fw"></span>
                     Create new employee
                 </a>

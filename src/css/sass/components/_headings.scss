@@ -1,12 +1,15 @@
-/*#application-header h2 {
-    float: left;
+h1 {
+    // See component/logos
+}
+
+h2 {
     font-family: $font-application-title;
     color: $color-title;
-    font-size: 1.7142857142857142857142857142857em;  24px / 14px
+    font-size: 1.7142857142857142857142857142857em;  /* 24px / 14px */
     text-transform: uppercase;
 
-    #{$a-tags} {
+    > a {
         color: $color-title;
         border-bottom: 0;
     }
-}*/
+}

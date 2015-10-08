@@ -13,6 +13,12 @@ body {
 
 a {
     text-decoration: none;
+    color: $color-link;
+    border-bottom: 1px solid $color-border;
+}
+
+a:hover {
+    border-color: $color-link;
 }
 
 #content {

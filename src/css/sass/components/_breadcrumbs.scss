@@ -1,15 +1,14 @@
-#breadcrumb {
-    float:right;
+.breadcrumb {
     
-    li {
+    > li {
         display: inline-block;
-        
-        &::after {
-            content: '\00a0/\00a0';
-        }
-        
-        &.last::after {
-            content: '';
-        }
     }
+    
+    > li + li::before {
+        content: '\00a0/\00a0';
+    }
+}
+
+.breadcrumb-header {
+    float: right;
 }

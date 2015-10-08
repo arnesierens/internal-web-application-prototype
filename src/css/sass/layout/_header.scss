@@ -16,4 +16,8 @@ header[role="banner"] {
     max-width: $width-main;
     margin: 0 auto;
     padding: $padding-main-horizontal;
+    
+    a {
+        border-bottom: 0;
+    }
 }

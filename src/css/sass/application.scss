@@ -14,12 +14,15 @@
 @import 'components/headings';
 @import 'components/dropdowns';
 @import 'components/searchboxes';
+@import 'components/breadcrumbs';
+@import 'components/buttons';
 
 // Layout
 @import 'layout/main';
 @import 'layout/header';
 @import 'layout/navigation';
-//@import 'layout/application-header';
+@import 'layout/application-header';
+@import 'layout/application-content';
 @import 'layout/footer';
 
 // Pages

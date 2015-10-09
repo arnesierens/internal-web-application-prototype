@@ -8,10 +8,18 @@ footer {
     background-color: $color-background-header;
     border-top: 1px solid $color-border;
     text-align: center;
+    line-height: 20px;
     font-size: 0.875em; /* 14px / 16px */
-    line-height: $line-height-footer;
+    padding: 40px;
+}
+
+.footer-extra-info {
+    > li {
+        display: inline-block;
+        padding-bottom: 20px;
+    }
     
-    p {
-        padding: 0 $padding-main-horizontal;
+    > li + li {
+        margin-left: 30px;
     }
 }

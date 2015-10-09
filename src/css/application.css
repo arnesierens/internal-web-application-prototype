@@ -2345,7 +2345,7 @@ html {
 body {
   background-color: #f8f8f8;
   padding-top: 81px;
-  margin-bottom: 81px; }
+  margin-bottom: 141px; }
 
 a {
   text-decoration: none;
@@ -2508,14 +2508,19 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 81px;
+  height: 141px;
   background-color: #fff;
   border-top: 1px solid #e5e5e5;
   text-align: center;
+  line-height: 20px;
   font-size: 0.875em;
   /* 14px / 16px */
-  line-height: 80px; }
-  footer p {
-    padding: 0 20px; }
+  padding: 40px; }
+
+.footer-extra-info > li {
+  display: inline-block;
+  padding-bottom: 20px; }
+.footer-extra-info > li + li {
+  margin-left: 30px; }
 
 /*# sourceMappingURL=application.css.map */

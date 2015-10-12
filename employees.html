@@ -206,7 +206,6 @@
                     <a href="#">Employees</a>
                 </h2>
                 
-                
                 <div class="breadcrumb-header">
                     <span>You are here:</span>
                     
@@ -222,28 +221,34 @@
             </header>
         </div> <!-- end #application-header -->
         
-        <div class="application-navigation">
-            <ul>
-                <li>
-                    <a href="#">Settings</a>
-                </li>
+        <div class="application-navigation-wrapper">
+            <div class="application-navigation clearfix">
+                <a href="#" class="button button-action">
+                    <span class="fa fa-plus-circle"></span>
+                    Add employee
+                </a>
                 
-                <li>
-                    <a href="#">Lists and documents</a>
-                </li>
-                <li>
-                    <a href="#">Manual</a>
-                </li>
-                <li>
-                    <a href="#">Notifications</a>
-                </li>
-                
-                <li>
-                    <a href="#">Messages</a>
-                </li>
-                
-            </ul>
-        </div> <!-- end #application-navigation -->
+                <ul>
+                    <li>
+                        <a href="#">Settings</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Lists and documents</a>
+                    </li>
+                    <li>
+                        <a href="#">Manual</a>
+                    </li>
+                    <li>
+                        <a href="#">Notifications</a>
+                    </li>
+
+                    <li>
+                        <a href="#">Messages</a>
+                    </li>
+                </ul>
+            </div> <!-- end #application-navigation -->
+        </div> <!-- end #application-navigation-wrapper -->
         
         <div class="application-content clearfix">
             <div class="employees-filter">
@@ -276,17 +281,11 @@
             </div>
 
             <div class="employees-main">
-                
-                <a href="#" class="button button-action">
-                    <span class="fa fa-plus-circle"></span>
-                    Add employee
-                </a>
-                
                 <div class="employees-overview">
                     <div class="employees-row-header">
                         <span class="row-header">Surname</span>
                         <span class="row-header">Name</span>
-                        <span class="row-header">Deparment</span>
+                        <span class="row-header">Department</span>
                         <span class="row-header">Email</span>
                         <span class="row-header">Name</span>
                     </div>

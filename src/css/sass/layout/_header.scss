@@ -9,13 +9,6 @@ header[role="banner"] {
     background-color: $color-background-header;
     z-index: 100;
     font-size: 0.875em; /* 14px / 16px */
-}
-
-.header-inner {
-    height: $height-header-inner;
-    max-width: $width-main;
-    margin: 0 auto;
-    padding: $padding-main-horizontal;
     
     a {
         border-bottom: 0;

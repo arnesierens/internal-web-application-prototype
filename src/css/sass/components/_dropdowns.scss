@@ -1,6 +1,6 @@
 .dropdown-wrapper {
     display: none;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 
 .dropdown {
@@ -52,15 +52,17 @@
 
 .dropdown-nav-main {
     width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
+    //left: 50%;
+    //transform: translateX(-50%);
     
     &:before {
-        left: 93px;
+        //left: 93px;
+        left: 12px;
     }
     
     &:after {
-        left: 93px;
+        //left: 93px;
+        left: 12px;
     }
     
     a {

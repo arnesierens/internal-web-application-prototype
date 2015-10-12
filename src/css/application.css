@@ -2092,6 +2092,7 @@ table {
   width: 40px;
   height: 40px;
   float: left;
+  margin: 20px 40px;
   text-indent: -9999em;
   background: url("../img/temp-logo.png") center center no-repeat;
   background-size: 40px;
@@ -2111,7 +2112,7 @@ h2 {
 
 .dropdown-wrapper {
   display: none;
-  padding-top: 20px; }
+  padding-top: 5px; }
 
 .dropdown {
   box-sizing: border-box;
@@ -2152,13 +2153,11 @@ h2 {
       border: 0; }
 
 .dropdown-nav-main {
-  width: 200px;
-  left: 50%;
-  transform: translateX(-50%); }
+  width: 200px; }
   .dropdown-nav-main:before {
-    left: 93px; }
+    left: 12px; }
   .dropdown-nav-main:after {
-    left: 93px; }
+    left: 12px; }
   .dropdown-nav-main a {
     color: #6c6c6c;
     display: block;
@@ -2271,7 +2270,8 @@ input {
 
 div[role="search"] {
   float: left;
-  position: relative; }
+  position: relative;
+  margin: 20px 0; }
 
 .form-search-main {
   position: relative; }
@@ -2281,9 +2281,11 @@ div[role="search"] {
     height: 40px;
     line-height: 40px;
     padding-left: 10px;
-    padding-right: 38px; }
+    padding-right: 38px;
+    background-color: #fafafa; }
     .form-search-main input:focus {
-      outline: 0; }
+      outline: 0;
+      background-color: #fff; }
   .form-search-main > button {
     color: #6c6c6c;
     border: 0;
@@ -2393,42 +2395,34 @@ header[role="banner"] {
   z-index: 100;
   font-size: 0.875em;
   /* 14px / 16px */ }
-
-.header-inner {
-  height: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px; }
-  .header-inner a {
+  header[role="banner"] a {
     border-bottom: 0; }
 
 nav {
-  float: left; }
+  display: block;
+  width: 1100px;
+  margin: 0 auto; }
 
 .nav-main {
-  margin: 0 40px;
-  height: 40px; }
+  float: left; }
   .nav-main > li {
     display: inline-block;
     position: relative;
+    line-height: 40px;
+    padding: 20px 0;
+    margin-right: 40px;
     font-weight: 700; }
     .nav-main > li:hover .dropdown-wrapper {
       display: block; }
     .nav-main > li:hover > a {
-      color: #fff;
-      background-color: #594491; }
+      color: #594491; }
     .nav-main > li > a {
       display: block;
-      height: 40px;
-      line-height: 40px;
-      padding: 0 20px;
-      color: #6c6c6c;
-      -webkit-border-radius: 3px;
-      -moz-border-radius: 3px;
-      border-radius: 3px; }
+      color: #6c6c6c; }
 
 .nav-main-user {
-  float: right; }
+  float: right;
+  margin: 20px 40px; }
   .nav-main-user > li {
     float: left;
     position: relative; }

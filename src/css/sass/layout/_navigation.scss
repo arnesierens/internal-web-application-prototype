@@ -1,16 +1,20 @@
 // Main navigation
 
 nav {
-    float: left;
+    display: block;
+    width: $width-main;
+    margin: 0 auto;
 }
     
 .nav-main {
-    margin: 0 40px;
-    height: 40px;
+    float: left;
     
     > li {
         display: inline-block;
         position: relative;
+        line-height: 40px;
+        padding: 20px 0;
+        margin-right: 40px;
         font-weight: $bold;
         
         &:hover .dropdown-wrapper {
@@ -18,18 +22,12 @@ nav {
         }
         
         &:hover > a {
-            color: $color-background-header;
-            background-color: $color-brand;
+            color: $color-brand;
         }
         
         > a {
             display: block;
-            height: $height-main-nav;
-            line-height: $height-main-nav;
-            padding: 0 $padding-main-horizontal;
             color: $color-main;
-            
-            @include rounded($border-radius);
         }
     }
 }
@@ -38,6 +36,7 @@ nav {
 
 .nav-main-user {
     float: right;
+    margin: 20px 40px;
     
     > li {
         float: left;

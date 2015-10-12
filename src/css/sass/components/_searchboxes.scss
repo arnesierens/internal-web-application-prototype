@@ -1,6 +1,7 @@
 div[role="search"] {
     float: left;
     position: relative;
+    margin: 20px 0;
 }
 
 .form-search-main {
@@ -13,9 +14,11 @@ div[role="search"] {
         line-height: 40px;
         padding-left: 10px;
         padding-right: 38px;
+        background-color: #fafafa;
 
         &:focus {
             outline: 0;
+            background-color: #fff;
         }
     }
     

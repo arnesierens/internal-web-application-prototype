@@ -2306,23 +2306,20 @@ div[role="search"] {
   position: relative;
   display: inline-block;
   line-height: 20px;
-  padding: 5px 15px;
-  border: 0;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px; }
+  padding: 10px 15px;
+  border: 0; }
   .button:active {
     top: 1px; }
 
 .button-action {
-  margin-top: 5px;
-  color: #fff;
+  color: #6c6c6c;
   font-weight: 700;
-  background-color: #2ebf6c; }
+  background-color: #e5e5e5; }
   .button-action > span {
     margin-right: 10px; }
   .button-action:hover {
-    background-color: #2cb767; }
+    color: #fff;
+    background-color: #2ebf6c; }
 
 select {
   color: #6c6c6c;
@@ -2487,7 +2484,7 @@ nav {
 .application-navigation {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 5px 20px; }
+  padding: 0 20px; }
   .application-navigation > ul {
     text-align: left;
     float: left; }
@@ -2522,7 +2519,7 @@ nav {
 .application-content {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 40px 0; }
+  padding: 40px 20px; }
 
 footer {
   box-sizing: border-box;
@@ -2545,7 +2542,7 @@ footer {
 .footer-extra-info > li + li {
   margin-left: 30px; }
 
-/* layout */
+/* Filter */
 .employees-filter {
   width: 22.727272727272727272727272727273%;
   /* 250px / 1100px; */
@@ -2569,7 +2566,34 @@ footer {
     width: 100%;
     box-sizing: border-box; }
 
+/* Employees overview */
 .employees-overview {
   width: 100%; }
+
+.employees-list-header {
+  padding: 20px 20px 20px 60px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 700;
+  border-bottom: 1px solid #e5e5e5; }
+
+.employees-list-item {
+  border-bottom: 1px solid #e5e5e5; }
+  .employees-list-item > a {
+    display: block;
+    padding: 10px;
+    border: 0; }
+    .employees-list-item > a:hover {
+      background-color: #fafafa; }
+
+.employees-list-avatar {
+  display: inline-block;
+  width: 40px; }
+  .employees-list-avatar > img {
+    width: 40px;
+    box-sizing: border-box;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%; }
 
 /*# sourceMappingURL=application.css.map */

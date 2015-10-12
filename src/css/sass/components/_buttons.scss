@@ -2,9 +2,8 @@
     position: relative;
     display: inline-block;
     line-height: 20px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border: 0;
-    @include rounded($border-radius);
     
     &:active {
         top: 1px;
@@ -12,16 +11,16 @@
 }
 
 .button-action {
-    margin-top: 5px;
-    color: #fff;
+    color: $color-main;
     font-weight: $bold;
-    background-color: $color-button;
+    background-color: $color-border;
     
     > span {
         margin-right: 10px;
     }
     
     &:hover {
-        background-color: darken($color-button, 2%);
+        color: #fff;
+        background-color: $color-button;
     }
 }

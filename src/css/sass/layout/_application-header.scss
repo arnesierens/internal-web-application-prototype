@@ -13,3 +13,15 @@
 .application-header-title {
     float: left;
 }
+
+.breadcrumb-header {
+    float: right;
+    
+    > span {
+        margin-right: 10px;
+    }
+    
+    > ul {
+        display: inline-block;
+    }
+}

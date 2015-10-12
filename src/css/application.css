@@ -2303,9 +2303,6 @@ div[role="search"] {
 .breadcrumb > li + li::before {
   content: '\00a0/\00a0'; }
 
-.breadcrumb-header {
-  float: right; }
-
 .button {
   position: relative;
   display: inline-block;
@@ -2367,7 +2364,7 @@ html {
 body {
   background-color: #f8f8f8;
   padding-top: 81px;
-  margin-bottom: 141px; }
+  margin-bottom: 121px; }
 
 a {
   text-decoration: none;
@@ -2511,6 +2508,13 @@ nav {
 .application-header-title {
   float: left; }
 
+.breadcrumb-header {
+  float: right; }
+  .breadcrumb-header > span {
+    margin-right: 10px; }
+  .breadcrumb-header > ul {
+    display: inline-block; }
+
 .application-content {
   max-width: 1100px;
   margin: 0 auto;
@@ -2522,14 +2526,14 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 141px;
+  height: 121px;
   background-color: #fff;
   border-top: 1px solid #e5e5e5;
   text-align: center;
   line-height: 20px;
   font-size: 0.875em;
   /* 14px / 16px */
-  padding: 40px; }
+  padding: 30px; }
 
 .footer-extra-info > li {
   display: inline-block;

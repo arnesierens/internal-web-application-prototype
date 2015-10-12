@@ -223,16 +223,13 @@
             </ul>
         </div> <!-- end #application-navigation -->
         
-        <div class="application-content">
-            <div class="column-left">
-                <a href="#" class="button button-action">
-                    <span class="fa fa-plus-circle fa-fw"></span>
-                    Add employee
-                </a>
-
+        <div class="application-content clearfix">
+            <div class="employees-filter">
+                
                 <form class="filter-employees">
                     <div class="employees-filter-item">
-                        <input type="text" placeholder="Search">
+                        <label for="filter-name">Surname / name</label>
+                        <input type="text" id="filter-name" placeholder="Search">
                     </div>
 
                     <div class="employees-filter-item">
@@ -256,7 +253,13 @@
                 </form>
             </div>
 
-            <div class="column-main">
+            <div class="employees-main">
+                
+                <a href="#" class="button button-action">
+                    <span class="fa fa-plus-circle"></span>
+                    Add employee
+                </a>
+                
                 <div class="employees-overview">
                     <div class="employees-row-header">
                         <span class="row-header">Surname</span>

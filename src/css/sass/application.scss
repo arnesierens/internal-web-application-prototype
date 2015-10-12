@@ -18,6 +18,8 @@
 @import 'components/breadcrumbs';
 @import 'components/buttons';
 @import 'components/selectboxes';
+@import 'components/checkboxes';
+@import 'components/submits';
 
 
 // Layout
@@ -29,4 +31,4 @@
 @import 'layout/footer';
 
 // Pages
-//@import 'pages/employees';
+@import 'pages/employees';

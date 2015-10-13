@@ -1,9 +1,9 @@
 .dropdown-wrapper {
     display: none;
-    padding-top: 5px;
+    padding-top: 20px;
 }
 
-.dropdown {
+.dropdown-menu {
     box-sizing: border-box;
     background-color: $color-background-header;
     border: 1px solid $color-border;
@@ -35,7 +35,9 @@
         z-index: 0;
         top: -9px;
     }
-    
+}
+
+.dropdown-list-simple {
     > li {
         display: block;
         border-bottom: 1px solid $color-border;
@@ -52,6 +54,7 @@
 
 .dropdown-nav-main {
     width: 200px;
+    z-index: 100;
     //left: 50%;
     //transform: translateX(-50%);
     
@@ -68,9 +71,8 @@
     a {
         color: $color-main;
         display: block;
-        padding: 0 15px;
-        height: 40px;
-        line-height: 40px;
+        padding: 10px 15px;
+        line-height: 20px;
         width: 100%;
         box-sizing: border-box;
         text-decoration: none;
@@ -88,8 +90,8 @@
 
 // Dropdown search
 
-/*.dropdown-search {
-    width: 300px;
+.dropdown-search {
+    width: $width-searchbox;
     
     &:before {
         left: 12px;
@@ -100,29 +102,49 @@
     }
 }
 
-.dropdown-search-list a {
+.search-heading {
+    color: $color-titles;
+    text-transform: uppercase;
+    font-weight: $bold;
+    line-height: 20px;
+    padding: 10px 15px;
+    border-bottom: 1px solid $color-border;
+}
+
+.search-link {
     display: block;
-    padding: 10px;
+    padding: 10px 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.dropdown-search-list-name {
-   display: block; 
-}
-
-.dropdown-search-list-department {
-    font-weight: 300;
-}
-
-.dropdown-search-list-img {
-    float: left;
-    box-sizing: border-box;
-    height: 40px;
-    border: 1px solid $color-border;
+.search-users-img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
     margin-right: 10px;
     @include rounded(50%);
 }
 
-.dropdown-profile {
+.search-users-name {
+    display: inline-block;
+    line-height: 32px;
+}
+
+.search-departments-icon {
+    color: #bbb;
+    background-color: #fafafa;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    margin-right: 10px;
+    @include rounded(50%);
+}
+
+/*.dropdown-profile {
     width: 200px;
     right: 0;
     

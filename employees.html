@@ -23,34 +23,36 @@
                     </a>
 
                     <div class="dropdown-wrapper">
-                        <ul class="dropdown dropdown-nav-main">
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-cutlery fa-fw"></span>
-                                    Catering
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-users fa-fw"></span>
-                                    Employees
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-ticket fa-fw"></span>
-                                    Support ticket
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-bus fa-fw"></span>
-                                    Transport
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="dropdown-menu dropdown-nav-main">
+                            <ul class="dropdown-list-simple">
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-cutlery fa-fw"></span>
+                                        Catering
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-users fa-fw"></span>
+                                        Employees
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-ticket fa-fw"></span>
+                                        Support ticket
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-bus fa-fw"></span>
+                                        Transport
+                                    </a>
+                                </li>
+                            </ul>
+                        </div> <!-- end .dropdown-menu -->
                     </div> <!-- end .dropdown-wrapper -->
-                </li> <!-- end .nav-main-item -->
+                </li>
 
                 <li>
                     <a href="#">Admin</a>
@@ -60,33 +62,35 @@
                     <a href="#">Help</a>
 
                     <div class="dropdown-wrapper">
-                        <ul class="dropdown dropdown-nav-main">
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-book fa-fw"></span>
-                                    Manuals
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-question fa-fw"></span>
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-sitemap fa-fw"></span>
-                                    Sitemap
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fa fa-at fa-fw"></span>
-                                    Support
-                                </a>
-                            </li>   
-                        </ul>
-                    </div> <!-- end .dropdown -->
+                        <div class="dropdown-menu dropdown-nav-main">
+                            <ul class="dropdown-list-simple">
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-book fa-fw"></span>
+                                        Manuals
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-question fa-fw"></span>
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-sitemap fa-fw"></span>
+                                        Sitemap
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-at fa-fw"></span>
+                                        Support
+                                    </a>
+                                </li>   
+                            </ul>
+                        </div> <!-- end .dropdown-menu -->
+                    </div> <!-- end .dropdown-wrapper -->
                 </li>
             </ul> <!-- end .nav-main -->
             
@@ -99,30 +103,46 @@
                     </button>
                 </form>
 
-                <div class="dropdown-wrapper">
-                    <ul class="dropdown">
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                <span class="dropdown-search-list-name">Arne Sierens</span>
-                                <span class="dropdown-search-list-department">IT department</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                <span class="dropdown-search-list-name">Arne Sierens</span>
-                                <span class="dropdown-search-list-department">IT department</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="clearfix">
-                                <img class="dropdown-search-list-img" src="src/img/avatar.png" alt="Arne Sierens">
-                                <span class="dropdown-search-list-name">Arne Sierens</span>
-                                <span class="dropdown-search-list-department">IT department</span>
-                            </a>
-                        </li>   
-                    </ul>
+                <div id="js-search-main-dropdown" class="dropdown-wrapper">
+                    <div class="dropdown-menu dropdown-search">
+                        <div class="search-heading">
+                            Users
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="search-link">
+                                    <img class="search-users-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                    <span class="search-users-name">Arne Sierens</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="search-link">
+                                    <img class="search-users-img" src="src/img/avatar.png" alt="Arne Sierens">
+                                    <span class="search-users-name">Very long long loooong looooooong name</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="search-heading">
+                            Departments
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#" class="search-link">
+                                    <span class="search-departments-icon fa fa-users fa-fw"></span>
+                                    <span class="search-departments-name">Accountancy</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="search-link">
+                                    <span class="search-departments-icon fa fa-users fa-fw"></span>
+                                    <span class="search-departments-name">IT</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div>
+                            Show all results
+                        </div>
+                    </div> <!-- end .dropdown-menu -->
                 </div> <!-- end .dropdown-wrapper -->
             </div> <!-- end role=["search"] -->
         </nav>
@@ -148,7 +168,7 @@
                 </a>
 
                 <div class="dropdown-wrapper">
-                    <ul class="dropdown">  
+                    <ul>  
                         <li>
                             <a href="#" class="clearfix dropdown-message-link">
                                 <div class="dropdown-message-avatar">
@@ -172,26 +192,28 @@
                 </a>
 
                 <div class="dropdown-wrapper">
-                    <ul class="dropdown">
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-user fa-fw"></span>
-                                My profile
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-gear fa-fw"></span>
-                                My settings
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="fa fa-sign-out fa-fw"></span>
-                                Log out
-                            </a>
-                        </li>
-                    </ul>
+                    <div class="dropdown-menu dropdown-nav-main">
+                        <ul class="dropdown-list-simple">
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-user fa-fw"></span>
+                                    My profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-gear fa-fw"></span>
+                                    My settings
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fa fa-sign-out fa-fw"></span>
+                                    Log out
+                                </a>
+                            </li>
+                        </ul>
+                    </div> <!-- end .dropdown-menu -->
                 </div> <!-- end .dropdown-wrapper -->
             </li>
         </ul> <!-- end .nav-main-user -->

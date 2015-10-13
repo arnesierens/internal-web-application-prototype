@@ -4,12 +4,12 @@ h1 {
 
 h2 {
     font-family: $font-application-title;
-    color: $color-main;
+    color: $color-titles;
     font-size: 1.7142857142857142857142857142857em;  /* 24px / 14px */
     text-transform: uppercase;
 
     > a {
-        color: $color-main;
+        color: $color-titles;
         border-bottom: 0;
     }
 }

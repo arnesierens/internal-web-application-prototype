@@ -9,7 +9,7 @@ div[role="search"] {
     
     input {
         box-sizing: border-box;
-        width: 300px;
+        width: $width-searchbox;
         height: 40px;
         line-height: 40px;
         padding-left: 10px;

@@ -10,10 +10,10 @@ $(document).ready(function() {
     });
     
     // Profile dropdown
-//    $('#header-profile').click(function(e) {
-//        e.preventDefault();
-//        $('#header-profile-dropdown').toggle();
-//    });
+    $('#js-user-profile').click(function(e) {
+        e.preventDefault();
+        $('#js-user-profile-dropdown').toggle();
+    });
 //    
 //    // Messages dropdown
 //    $('#header-messages').click(function(e) {
@@ -22,13 +22,13 @@ $(document).ready(function() {
 //    });
 //    
 //    // Hide profile dropdown if click is outside of dropdown
-//    $(document).on('click', function(e) {
-//        if (!$(e.target).closest('#header-profile').length) {
-//            $('#header-profile-dropdown').hide();
-//        }
-//        
+    $(document).on('click', function(e) {
+        if (!$(e.target).closest('#js-user-profile').length) {
+            $('#js-user-profile-dropdown').hide();
+        }
+        
 //        if(!$(e.target).closest('#header-messages').length) {
 //            $('#header-messages-dropdown').hide();
 //        }
-//    });
+    });
 });

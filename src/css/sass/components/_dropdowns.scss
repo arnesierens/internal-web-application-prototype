@@ -47,49 +47,60 @@
         &:last-child {
             border: 0;
         }
+        
+        > a {
+            color: $color-main;
+            display: block;
+            padding: 10px 15px;
+            line-height: 20px;
+            width: 100%;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-weight: $bold;
+
+            span {
+                padding-right: 10px;
+            }
+
+            &:hover {
+                background-color: $color-brand;
+                color: #fff;
+            }
+        }
     }
 }
 
 // Dropdown main navigation
 
-.dropdown-nav-main {
+.dropdown-apps {
     width: 200px;
     z-index: 100;
-    //left: 50%;
-    //transform: translateX(-50%);
     
     &:before {
-        //left: 93px;
         left: 12px;
     }
     
     &:after {
-        //left: 93px;
         left: 12px;
     }
+}
+
+.dropdown-help {
+    width: 200px;
+    z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
     
-    a {
-        color: $color-main;
-        display: block;
-        padding: 10px 15px;
-        line-height: 20px;
-        width: 100%;
-        box-sizing: border-box;
-        text-decoration: none;
-
-        span {
-            padding-right: 10px;
-        }
-
-        &:hover {
-            background-color: $color-brand;
-            color: #fff;
-        }
+    &:before {
+        left: 93px;
+    }
+    
+    &:after {
+        left: 93px;
     }
 }
 
 // Dropdown search
-
 .dropdown-search {
     width: $width-searchbox;
     
@@ -164,7 +175,7 @@
     }
 }
 
-/*.dropdown-profile {
+.dropdown-profile {
     width: 200px;
     right: 0;
     
@@ -177,7 +188,7 @@
     }
 }
 
-.dropdown-messages {
+/*.dropdown-messages {
     width: 400px;
     right: 0;
     

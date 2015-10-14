@@ -2180,8 +2180,12 @@ h2 {
     left: 12px; }
   .dropdown-search:after {
     left: 12px; }
+  .dropdown-search > ul {
+    margin-bottom: 10px; }
 
 .search-heading {
+  font-size: 0.92857142857142857142857142857143em;
+  /* 13px / 14px */
   color: #353535;
   text-transform: uppercase;
   font-weight: 700;
@@ -2195,8 +2199,10 @@ h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  .search-link:hover {
+    background-color: #EEECF4; }
 
-.search-users-img {
+.search-avatar {
   display: inline-block;
   vertical-align: middle;
   width: 32px;
@@ -2206,21 +2212,25 @@ h2 {
   -moz-border-radius: 50%;
   border-radius: 50%; }
 
-.search-users-name {
-  display: inline-block;
-  line-height: 32px; }
-
 .search-departments-icon {
   color: #bbb;
   background-color: #fafafa;
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
-  margin-right: 10px;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%; }
+  line-height: 32px; }
+
+.search-users-name, .search-departments-name {
+  line-height: 32px; }
+
+.search-show-all {
+  display: block;
+  color: #353535;
+  border-top: 1px solid #e5e5e5;
+  line-height: 20px;
+  padding: 10px 15px; }
+  .search-show-all > span {
+    width: 32px;
+    margin-right: 10px; }
+  .search-show-all:hover {
+    border-color: #e5e5e5; }
 
 /*.dropdown-profile {
     width: 200px;

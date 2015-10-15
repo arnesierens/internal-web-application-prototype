@@ -2211,7 +2211,8 @@ h2 {
   overflow: hidden;
   text-overflow: ellipsis; }
   .search-link:hover {
-    background-color: #EEECF4; }
+    color: #fff;
+    background-color: #594491; }
 
 .search-avatar {
   display: inline-block;

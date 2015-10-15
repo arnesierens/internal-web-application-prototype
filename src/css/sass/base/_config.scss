@@ -7,6 +7,8 @@ $regular:   400;
 $medium:    500;
 $bold:      700;
 
+// TODO: calculate font sizes based on main font size (14px)
+
 // Logo
 $width-logo:    40px;
 $height-logo:   40px;
@@ -27,7 +29,7 @@ $height-header-inner: 40px;
 $width-searchbox: 300px;
 
 // Footer
-$height-footer: 121px;
+$height-footer: 213px;
 
 // Nav
 $height-main-nav: 40px;
@@ -49,6 +51,8 @@ $color-background-header: #fff; /* white */
 $color-background-application-header: #fafafa; /* light gray */
 
 $color-button: #2ebf6c;
+
+$color-fb: #3B5998;
 
 // Borders
 $border-radius: 3px;

@@ -77,7 +77,7 @@ nav {
     
     > a {
         color: $color-main;
-        font-size: 1.0714285714285714285714285714286em;  /* 15px / 14px */
+        font-size: em(15, 14);
         display: block;
         line-height: 34px;
         text-align: center;
@@ -89,7 +89,7 @@ nav {
 }
 
 .user-icon-number {
-    font-size: 0.78571428571428571428571428571429em;  /* 11px / 14px */
+    font-size: em(11, 14);
     position: absolute;
     top: 0;
     right: 0;

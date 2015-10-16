@@ -127,7 +127,7 @@
 }
 
 .search-heading {
-    font-size: 0.92857142857142857142857142857143em; /* 13px / 14px */
+    font-size: em(13, 14);
     color: $color-titles;
     text-transform: uppercase;
     font-weight: $bold;

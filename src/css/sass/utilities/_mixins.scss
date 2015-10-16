@@ -1,9 +1,17 @@
 // Mixins
 
-@mixin rounded($radius) {
-  -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-          border-radius: $radius;
+@mixin rounded($top-left, $top-right: null, $bottom-right: null, $bottom-left: null) {
+    
+    @if $top-right != null {
+        -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
+           -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;
+                border-radius: $top-left $top-right $bottom-right $bottom-left;
+    }
+    @else {
+        -webkit-border-radius: $top-left;
+           -moz-border-radius: $top-left;
+                border-radius: $top-left;
+    }
 }
 
 @mixin transition($property) {
@@ -11,4 +19,10 @@
      -moz-transition: $property .5s ease;
        -o-transition: $property .5s ease;
           transition: $property .5s ease;
+}
+
+@mixin shadow($x, $y, $blur, $color) {
+  -webkit-box-shadow: $x $y $blur $color;
+     -moz-box-shadow: $x $y $blur $color;
+          box-shadow: $x $y $blur $color;
 }

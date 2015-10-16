@@ -2123,7 +2123,10 @@ h2 {
   position: absolute;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
-  border-radius: 3px; }
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.13);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.13); }
   .dropdown-menu:before {
     content: '';
     position: absolute;
@@ -2144,6 +2147,16 @@ h2 {
     width: 0;
     z-index: 0;
     top: -9px; }
+
+.first-row {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0; }
+
+.last-row {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px; }
 
 .dropdown-list-simple > li {
   display: block;

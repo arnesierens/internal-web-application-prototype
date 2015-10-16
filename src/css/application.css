@@ -2361,7 +2361,12 @@ div[role="search"] {
   border: 1px solid #e5e5e5;
   margin-bottom: 30px; }
   .button-social > span {
-    color: #3B5998; }
+    display: inline-block;
+    height: 20px;
+    vertical-align: middle;
+    color: #3B5998;
+    font-size: 1.2857142857142857142857142857143em;
+    /* 18px / 14px */ }
 
 select {
   color: #6c6c6c;

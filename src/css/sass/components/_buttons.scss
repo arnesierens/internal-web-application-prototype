@@ -31,6 +31,10 @@
     margin-bottom: 30px;
     
     > span {
+        display: inline-block;
+        height: 20px;
+        vertical-align: middle;
         color: $color-fb;
+        font-size: 1.2857142857142857142857142857143em; /* 18px / 14px */
     }
 }

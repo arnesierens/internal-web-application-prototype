@@ -288,33 +288,38 @@
         
         <div class="application-content clearfix">
             <div class="column-small-left">
-                
                 <form class="employees-search">
-                    <input type="text" id="employees-search" placeholder="Search">
+                    <input type="text" class="employees-search-input" placeholder="Search for employees">
+                    <button type="submit" class="employees-search-button" title="Search for employees">
+                        <span class="fa fa-search fa-fw"></span>
+                        <span class="visually-hidden">Search for employees</span>
+                    </button>
                 </form>
                 
-                <div class="employees-filter">
-                    <form>
-                        <div class="employees-filter-item">
-                            <label for="filter-department">Department</label>
+                <form class="employees-filter">
+                    <div class="filter-header">
+                        Filter
+                    </div>
+                    
+                    <div class="employees-filter-item">
+                        <label for="filter-department">Department</label>
 
-                            <select id="filter-department">
-                                <option value="-1">Choose a department</option>
-                                <option value="1">Accountancy</option>
-                                <option value="2">IT department</option>
-                            </select>
-                        </div>
+                        <select id="filter-department">
+                            <option value="-1">Choose a department</option>
+                            <option value="1">Accountancy</option>
+                            <option value="2">IT department</option>
+                        </select>
+                    </div>
 
-                        <div class="employees-filter-item">
-                            <label>
-                                <input type="checkbox">
-                                Show only removed employees
-                            </label>
-                        </div>
+                    <div class="employees-filter-item">
+                        <label>
+                            <input type="checkbox">
+                            Show only removed employees
+                        </label>
+                    </div>
 
-                        <input type="submit" value="Search">
-                    </form>
-                </div> <!-- end .employees-filter -->
+                    <input type="submit" value="Search">
+                </form>
             </div> <!-- end .colum-small -->
 
             <div class="column-wide-right">

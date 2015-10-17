@@ -2310,14 +2310,17 @@ h2 {
     text-overflow: ellipsis;
 }*/
 input {
+  line-height: 20px;
   color: #6c6c6c;
   border: 1px solid #e5e5e5;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   padding: 7px;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  outline: 0; }
+  outline: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  input:focus {
+    border-color: #6c6c6c; }
 
 div[role="search"] {
   float: left;
@@ -2336,7 +2339,8 @@ div[role="search"] {
     background-color: #fafafa; }
     .form-search-main input:focus {
       outline: 0;
-      background-color: #fff; }
+      background-color: #fff;
+      border-color: #e5e5e5; }
   .form-search-main > button {
     color: #6c6c6c;
     border: 0;
@@ -2387,14 +2391,17 @@ div[role="search"] {
     font-size: 1.28571em; }
 
 select {
+  line-height: 20px;
   color: #6c6c6c;
   border: 1px solid #e5e5e5;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
   padding: 6px;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  outline: 0; }
+  outline: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  select:focus {
+    border-color: #6c6c6c; }
 
 input[type="checkbox"] {
   height: 20px;
@@ -2602,16 +2609,52 @@ footer {
 .footer-extra-info > li + li {
   margin-left: 30px; }
 
-.filter-employees {
+.employees-search {
+  position: relative; }
+
+.employees-search-input {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px; }
+
+.employees-search-button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 0;
+  background-color: #fff;
+  color: #6c6c6c;
+  line-height: 20px;
+  padding: 7px;
+  margin: 1px; }
+
+.employees-filter {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #e5e5e5;
   background-color: #fff;
-  padding: 20px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px; }
-  .filter-employees input, .filter-employees select {
+  .employees-filter > input [type="submit"] {
+    width: 100%; }
+
+.filter-header {
+  font-size: 0.92857em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px 20px;
+  background-color: #353535;
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+  margin-bottom: 20px; }
+
+.employees-filter-item {
+  margin: 0 20px 20px 20px; }
+  .employees-filter-item input, .employees-filter-item select {
     width: 100%;
     box-sizing: border-box; }
 

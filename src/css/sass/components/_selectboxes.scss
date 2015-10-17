@@ -1,8 +1,13 @@
 select {
+    line-height: 20px;
     color: $color-main;
     border: 1px solid $color-border;
-    @include rounded($border-radius);
     padding: 6px;
     font-family: $font-main;
     outline: 0;
+    @include rounded($border-radius);
+    
+    &:focus {
+        border-color: $color-main;
+    }
 }

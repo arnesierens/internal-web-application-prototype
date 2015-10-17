@@ -1,12 +1,56 @@
+// Employees search
+
+.employees-search {
+    position: relative;
+}
+
+.employees-search-input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.employees-search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: #fff;
+    color: $color-main;
+    line-height: 20px;
+    padding: 7px;
+    margin: 1px;
+}
+
 // Filter
 
-.filter-employees {
+.employees-filter {
     width: 100%;
     box-sizing: border-box;
     border: 1px solid $color-border;
     background-color: #fff;
-    padding: 20px;
     @include rounded($border-radius);
+    
+    > input [type="submit"] {
+        width: 100%;
+        
+    }
+}
+
+.filter-header {
+    font-size: em(13, 14);
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: $bold;
+    line-height: 20px;
+    padding: 10px 20px;
+    background-color: $color-titles;
+    @include rounded($border-radius, $border-radius, 0, 0);
+    margin-bottom: 20px;
+}
+
+.employees-filter-item {
+    margin: 0 20px 20px 20px;
     
     input, select {
         width: 100%;

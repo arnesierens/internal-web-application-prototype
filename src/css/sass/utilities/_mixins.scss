@@ -1,7 +1,6 @@
 // Mixins
 
 @mixin rounded($top-left, $top-right: null, $bottom-right: null, $bottom-left: null) {
-    
     @if $top-right != null {
         -webkit-border-radius: $top-left $top-right $bottom-right $bottom-left;
            -moz-border-radius: $top-left $top-right $bottom-right $bottom-left;

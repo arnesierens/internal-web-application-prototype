@@ -2553,9 +2553,11 @@ nav {
   line-height: 20px; }
 
 .application-header {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px; }
+  width: 100%; }
+  .application-header > header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px; }
 
 .application-header-title {
   float: left; }

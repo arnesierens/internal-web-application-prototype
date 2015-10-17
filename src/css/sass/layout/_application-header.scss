@@ -5,9 +5,13 @@
 }
 
 .application-header {
-    max-width: $width-main;
-    margin: 0 auto;
-    padding: 20px;
+    width: 100%;
+    
+    > header {
+        max-width: $width-main;
+        margin: 0 auto;
+        padding: 20px;
+    }
 }
 
 .application-header-title {

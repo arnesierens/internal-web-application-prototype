@@ -1,14 +1,15 @@
 // Vendors
 @import 'vendor/font-awesome';
 
-// Base
-@import 'base/reset';
-@import 'base/config';
-
 // Utilities
 @import 'utilities/mixins';
 @import 'utilities/functions';
 @import 'utilities/utilities';
+
+// Base
+@import 'base/reset';
+@import 'base/config';
+@import 'base/grid';
 
 // Components
 @import 'components/logos';

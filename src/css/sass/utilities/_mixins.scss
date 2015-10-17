@@ -14,13 +14,6 @@
     }
 }
 
-@mixin transition($property) {
-  -webkit-transition: $property .5s ease;
-     -moz-transition: $property .5s ease;
-       -o-transition: $property .5s ease;
-          transition: $property .5s ease;
-}
-
 @mixin shadow($x, $y, $blur, $color) {
   -webkit-box-shadow: $x $y $blur $color;
      -moz-box-shadow: $x $y $blur $color;

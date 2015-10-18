@@ -1,0 +1,26 @@
+// Active filters
+
+.active-filter {
+    position: relative;
+    display: inline-block;
+    background-color: #fff;
+    line-height: 20px;
+    margin-top: 5px;
+    padding: 7px 43px 7px 10px;
+    border: 1px solid $color-border;
+    @include rounded($border-radius);
+    
+    > a {
+        color: $color-main;
+        
+        > span {
+            position: absolute;
+            top: 0;
+            right: 0;
+            line-height: 20px;
+            padding: 7px;
+            border-left: 1px solid $color-border;
+        }
+    }
+}
+

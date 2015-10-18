@@ -288,6 +288,51 @@
         
         <div class="application-content clearfix">
             <div class="column-small-left">
+                
+                <div class="active-filters-wrapper">
+                    Active filters:
+                    
+                    <div class="active-filters-list">
+                        <div class="active-filter">
+                            Accountancy
+                            <a href="#">
+                                <span class="fa fa-close fa-fw"></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="employees-filter-wrapper">
+                    <div class="filter-header">
+                        Filter
+                    </div>
+                
+                    <form class="employees-filter">
+                        <div class="employees-filter-item">
+                            <label for="filter-department">Department</label>
+
+                            <select id="filter-department">
+                                <option value="-1">Choose a department</option>
+                                <option value="1" selected="selected">Accountancy</option>
+                                <option value="2">Catering</option>
+                                <option value="3">IT</option>
+                            </select>
+                        </div>
+
+                        <div class="employees-filter-item">
+                            <label>
+                                <input type="checkbox">
+                                Show only former employees
+                            </label>
+                        </div>
+
+                        <input type="submit" value="Search">
+                    </form>
+                </div> <!-- .employees-filter-wrapper -->
+            </div> <!-- end .colum-small -->
+
+            <div class="column-wide-right">
+                
                 <form class="employees-search">
                     <input type="text" class="employees-search-input" placeholder="Search for employees">
                     <button type="submit" class="employees-search-button" title="Search for employees">
@@ -295,34 +340,6 @@
                         <span class="visually-hidden">Search for employees</span>
                     </button>
                 </form>
-                
-                <form class="employees-filter">
-                    <div class="filter-header">
-                        Filter
-                    </div>
-                    
-                    <div class="employees-filter-item">
-                        <label for="filter-department">Department</label>
-
-                        <select id="filter-department">
-                            <option value="-1">Choose a department</option>
-                            <option value="1">Accountancy</option>
-                            <option value="2">IT department</option>
-                        </select>
-                    </div>
-
-                    <div class="employees-filter-item">
-                        <label>
-                            <input type="checkbox">
-                            Show only removed employees
-                        </label>
-                    </div>
-
-                    <input type="submit" value="Search">
-                </form>
-            </div> <!-- end .colum-small -->
-
-            <div class="column-wide-right">
                 
                 <a href="#" class="button button-action">
                     <span class="fa fa-plus-circle"></span>
@@ -353,7 +370,7 @@
                         <li class="employees-list-item">
                             <a href="#" >
                                 <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png">
+                                    <img src="src/img/avatar.png" alt="Arne Sierens">
                                 </span>
                                 <span class="employees-list-surname">
                                     Sierens
@@ -372,7 +389,7 @@
                         <li class="employees-list-item">
                             <a href="#" >
                                 <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png">
+                                    <img src="src/img/avatar.png" alt="Arne Sierens">
                                 </span>
                                 <span class="employees-list-surname">
                                     Sierens
@@ -391,7 +408,7 @@
                         <li class="employees-list-item">
                             <a href="#" >
                                 <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png">
+                                    <img src="src/img/avatar.png" alt="Arne Sierens">
                                 </span>
                                 <span class="employees-list-surname">
                                     Sierens

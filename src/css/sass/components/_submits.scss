@@ -6,5 +6,9 @@ input[type="submit"] {
     background-color: $color-brand;
     cursor: pointer;
     @include rounded($border-radius);
+    
+    &:hover {
+        background-color: lighten($color-brand, 10%);
+    }
 }
 

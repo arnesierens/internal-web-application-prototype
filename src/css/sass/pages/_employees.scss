@@ -6,12 +6,13 @@
 
 .filter-header {
     font-size: em(13, 14);
-    color: #fff;
+    color: $color-titles;
     text-transform: uppercase;
     font-weight: $bold;
     line-height: 20px;
     padding: 10px 20px;
-    background-color: $color-titles;
+    background-color: $color-background;
+    border: 1px solid $color-border;
     @include rounded($border-radius, $border-radius, 0, 0);
 }
 
@@ -38,6 +39,8 @@
 
 .employees-search {
     position: relative;
+    float: left;
+    width: 300px;
 }
 
 .employees-search-input {
@@ -56,43 +59,48 @@
     line-height: 20px;
     padding: 7px;
     margin: 1px;
+    cursor: pointer;
+}
+
+/* New employees button */
+
+.button-new-employee {
+    float: right;
 }
 
 /* Employees overview */
 
 .employees-overview {
     width: 100%;
-}
-
-.employees-list-header {
-    padding: 20px 20px 20px 60px;
-    text-transform: uppercase;
-    color: $color-titles;
-    font-weight: $bold;
-    border-bottom: 1px solid $color-border;
-}
-
-.employees-list-item {
-    border-bottom: 1px solid $color-border;
+    background-color: #fff;
+    border: 1px solid $color-border;
+    @include rounded($border-radius);
     
-    > a {
-        display: block;
-        padding: 10px;
-        border: 0;
-        
-        &:hover {
-            background-color: #fafafa;
-        }
+    td {
+        line-height: 32px;
     }
 }
 
 .employees-list-avatar {
-    display: inline-block;
-    width: 40px;
+    width: 32px;
     
     > img {
-        width: 40px;
-        box-sizing: border-box;
-        @include rounded(50%);
+        width: 32px;
+        height: 32px;
+        vertical-align: middle;
     }
+}
+
+.employees-load {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px 10px;
+    font-weight: $bold;
+    border: 0;
+    color: #fff;
+    text-align: center;
+    background-color: $color-main;
+    @include rounded($border-radius);
 }

@@ -1,8 +1,9 @@
 .button {
     position: relative;
     display: inline-block;
+    box-sizing: border-box;
     line-height: 20px;
-    padding: 10px 15px;
+    padding: 7px 10px;
     border: 0;
     @include rounded($border-radius);
     
@@ -16,13 +17,12 @@
 }
 
 .button-action {
-    color: $color-main;
+    color: #fff;
     font-weight: $bold;
-    background-color: $color-border;
+    background-color: $color-link;
     
     &:hover {
-        color: #fff;
-        background-color: $color-button;
+        background-color: darken($color-link, 5%);
     }
 }
 

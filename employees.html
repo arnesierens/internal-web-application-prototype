@@ -20,6 +20,7 @@
                 <li>
                     <a href="/">
                         Applications
+                        <span class="fa fa-angle-down"></span>
                     </a>
 
                     <div class="dropdown-wrapper">
@@ -71,7 +72,10 @@
                 </li>
 
                 <li>
-                    <a href="#">Help</a>
+                    <a href="#">
+                        Help
+                        <span class="fa fa-angle-down"></span>
+                    </a>
 
                     <div class="dropdown-wrapper">
                         <div class="dropdown-menu dropdown-help">
@@ -266,9 +270,11 @@
             <div class="application-navigation clearfix">
                 <ul>
                     <li>
+                        <a href="#">Overview</a>
+                    </li>
+                    <li>
                         <a href="#">Settings</a>
                     </li>
-
                     <li>
                         <a href="#">Lists and documents</a>
                     </li>
@@ -278,7 +284,6 @@
                     <li>
                         <a href="#">Notifications</a>
                     </li>
-
                     <li>
                         <a href="#">Messages</a>
                     </li>
@@ -295,7 +300,7 @@
                     <div class="active-filters-list">
                         <div class="active-filter">
                             Accountancy
-                            <a href="#">
+                            <a href="#" title="Remove accountancy filter">
                                 <span class="fa fa-close fa-fw"></span>
                             </a>
                         </div>
@@ -333,99 +338,180 @@
 
             <div class="column-wide-right">
                 
-                <form class="employees-search">
-                    <input type="text" class="employees-search-input" placeholder="Search for employees">
-                    <button type="submit" class="employees-search-button" title="Search for employees">
-                        <span class="fa fa-search fa-fw"></span>
-                        <span class="visually-hidden">Search for employees</span>
-                    </button>
-                </form>
-                
-                <a href="#" class="button button-action">
-                    <span class="fa fa-plus-circle"></span>
-                    Add employee
-                </a>
-                
-                <div class="employees-overview">
-                    <div class="employees-list-header">
-                        <span>
-                            Surname
-                            <span class="fa fa-caret-down"></span>
-                        </span>
-                        <span>
-                            Name
-                            <span class="fa fa-caret-down"></span>
-                        </span>
-                        <span>
-                            Department
-                            <span class="fa fa-caret-down"></span>
-                        </span>
-                        <span>
-                            Email
-                            <span class="fa fa-caret-down"></span>
-                        </span>
-                    </div>
-                    
-                    <ul>
-                        <li class="employees-list-item">
-                            <a href="#" >
-                                <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png" alt="Arne Sierens">
-                                </span>
-                                <span class="employees-list-surname">
-                                    Sierens
-                                </span>
-                                <span class="employees-list-first-name">
-                                    Arne
-                                </span>
-                                <span class="employees-list-department">
-                                    IT
-                                </span>
-                                <span class="employees-list-email">
-                                    contact@sierensarne.be
-                                </span>
-                            </a>
-                        </li>
-                        <li class="employees-list-item">
-                            <a href="#" >
-                                <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png" alt="Arne Sierens">
-                                </span>
-                                <span class="employees-list-surname">
-                                    Sierens
-                                </span>
-                                <span class="employees-list-first-name">
-                                    Arne
-                                </span>
-                                <span class="employees-list-department">
-                                    IT
-                                </span>
-                                <span class="employees-list-email">
-                                    contact@sierensarne.be
-                                </span>
-                            </a>
-                        </li>
-                        <li class="employees-list-item">
-                            <a href="#" >
-                                <span class="employees-list-avatar">
-                                    <img src="src/img/avatar.png" alt="Arne Sierens">
-                                </span>
-                                <span class="employees-list-surname">
-                                    Sierens
-                                </span>
-                                <span class="employees-list-first-name">
-                                    Arne
-                                </span>
-                                <span class="employees-list-department">
-                                    IT
-                                </span>
-                                <span class="employees-list-email">
-                                    contact@sierensarne.be
-                                </span>
-                            </a>
-                        </li>
-                    </ul>
+                <div class="employees-actions-row clearfix">
+                    <form class="employees-search">
+                        <input type="text" class="employees-search-input" placeholder="Search for employees">
+                        <button type="submit" class="employees-search-button" title="Search for employees">
+                            <span class="fa fa-search fa-fw"></span>
+                            <span class="visually-hidden">Search for employees</span>
+                        </button>
+                    </form>
+
+                    <a href="#" class="button button-action button-new-employee">
+                        <span class="fa fa-plus-circle"></span>
+                        Add employee
+                    </a>
                 </div>
+                
+                <table class="employees-overview">
+                    <tr>
+                        <th></th>
+                        <th>
+                            <a href="#" class="sorted" title="Sort on name">
+                                Name
+                                <span class="sort-down fa fa-caret-down"></span>
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" title="Sort on department">
+                                Department
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" title="Sort on location">
+                                Location
+                            </a>
+                        </th>
+                        <th>
+                            <a href="#" title="Sort on email">
+                                Email
+                            </a>
+                        </th>
+                    </tr>
+
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="employees-list-avatar">
+                            <img  src="src/img/avatar.png" alt="Arne Sierens">
+                        </td>
+                        <td>
+                            <a href="#">Sierens Arne</a>
+                        </td>
+                        <td>IT</td>
+                        <td>Aartrijke</td>
+                        <td>
+                            <a href="mailto:contact@sierensarne.be">contact@sierensarne.be</a>
+                        </td>
+                    </tr>
+                </table>
+                
+                <a href="#" class="employees-load">Load more</a>
             </div> <!-- end .column-main -->
         </div> <!-- end #content -->
     </section> <!-- end #application -->

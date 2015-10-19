@@ -8,7 +8,7 @@ input[type="submit"] {
     @include rounded($border-radius);
     
     &:hover {
-        background-color: lighten($color-brand, 10%);
+        background-color: darken($color-brand, 5%);
     }
 }
 

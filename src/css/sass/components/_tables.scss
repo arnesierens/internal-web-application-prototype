@@ -1,0 +1,44 @@
+table {
+    width: 100%;
+    max-width: 100%;
+    empty-cells: show;
+}
+
+tr {
+    width: 100%;
+    
+    &:last-child td {
+        border-bottom: 0;
+    }
+}
+
+th {
+    font-size: em(13, 14);
+    font-weight: $bold;
+    line-height: 20px;
+    padding: 10px;
+    text-align: left;
+    text-transform: uppercase;
+    background-color: $color-background;
+    border-bottom: 1px solid $color-border;
+    
+    a {
+        color: $color-main;
+        border: 0;
+        
+        &.sorted {
+            color: $color-titles;
+        }
+        
+        > .sort-down {
+            margin-left: 3px;
+        }
+    }
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid $color-border;
+    vertical-align: middle;
+}
+

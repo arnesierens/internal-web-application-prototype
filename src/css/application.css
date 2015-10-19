@@ -2111,7 +2111,7 @@ table {
 h2 {
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #353535;
-  font-size: 1.71429em;
+  font-size: 2em;
   text-transform: uppercase; }
   h2 > a {
     color: #353535;
@@ -2361,8 +2361,9 @@ div[role="search"] {
 .button {
   position: relative;
   display: inline-block;
+  box-sizing: border-box;
   line-height: 20px;
-  padding: 10px 15px;
+  padding: 7px 10px;
   border: 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2373,12 +2374,11 @@ div[role="search"] {
     top: 1px; }
 
 .button-action {
-  color: #6c6c6c;
+  color: #fff;
   font-weight: 700;
-  background-color: #e5e5e5; }
+  background-color: #547EE4; }
   .button-action:hover {
-    color: #fff;
-    background-color: #2ebf6c; }
+    background-color: #3e6de1; }
 
 .button-social {
   border: 1px solid #e5e5e5;
@@ -2421,7 +2421,7 @@ input[type="submit"] {
   -moz-border-radius: 3px;
   border-radius: 3px; }
   input[type="submit"]:hover {
-    background-color: #7058b0; }
+    background-color: #4e3c80; }
 
 .active-filter {
   position: relative;
@@ -2443,6 +2443,38 @@ input[type="submit"] {
       line-height: 20px;
       padding: 7px;
       border-left: 1px solid #e5e5e5; }
+
+table {
+  width: 100%;
+  max-width: 100%;
+  empty-cells: show; }
+
+tr {
+  width: 100%; }
+  tr:last-child td {
+    border-bottom: 0; }
+
+th {
+  font-size: 0.92857em;
+  font-weight: 700;
+  line-height: 20px;
+  padding: 10px;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #e5e5e5; }
+  th a {
+    color: #6c6c6c;
+    border: 0; }
+    th a.sorted {
+      color: #353535; }
+    th a > .sort-down {
+      margin-left: 3px; }
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle; }
 
 html {
   position: relative;
@@ -2593,7 +2625,7 @@ nav {
   .application-header > header {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 20px; }
+    padding: 30px; }
 
 .application-header-title {
   float: left; }
@@ -2635,12 +2667,13 @@ footer {
 
 .filter-header {
   font-size: 0.92857em;
-  color: #fff;
+  color: #353535;
   text-transform: uppercase;
   font-weight: 700;
   line-height: 20px;
   padding: 10px 20px;
-  background-color: #353535;
+  background-color: #f8f8f8;
+  border: 1px solid #e5e5e5;
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;
   border-radius: 3px 3px 0 0; }
@@ -2663,7 +2696,9 @@ footer {
   margin-bottom: 20px; }
 
 .employees-search {
-  position: relative; }
+  position: relative;
+  float: left;
+  width: 300px; }
 
 .employees-search-input {
   width: 100%;
@@ -2679,36 +2714,44 @@ footer {
   color: #6c6c6c;
   line-height: 20px;
   padding: 7px;
-  margin: 1px; }
+  margin: 1px;
+  cursor: pointer; }
+
+/* New employees button */
+.button-new-employee {
+  float: right; }
 
 /* Employees overview */
 .employees-overview {
-  width: 100%; }
-
-.employees-list-header {
-  padding: 20px 20px 20px 60px;
-  text-transform: uppercase;
-  color: #353535;
-  font-weight: 700;
-  border-bottom: 1px solid #e5e5e5; }
-
-.employees-list-item {
-  border-bottom: 1px solid #e5e5e5; }
-  .employees-list-item > a {
-    display: block;
-    padding: 10px;
-    border: 0; }
-    .employees-list-item > a:hover {
-      background-color: #fafafa; }
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
+  .employees-overview td {
+    line-height: 32px; }
 
 .employees-list-avatar {
-  display: inline-block;
-  width: 40px; }
+  width: 32px; }
   .employees-list-avatar > img {
-    width: 40px;
-    box-sizing: border-box;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    border-radius: 50%; }
+    width: 32px;
+    height: 32px;
+    vertical-align: middle; }
+
+.employees-load {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 10px;
+  font-weight: 700;
+  border: 0;
+  color: #fff;
+  text-align: center;
+  background-color: #6c6c6c;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px; }
 
 /*# sourceMappingURL=application.css.map */

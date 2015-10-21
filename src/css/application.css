@@ -2475,6 +2475,10 @@ td {
   padding: 10px;
   border-bottom: 1px solid #e5e5e5;
   vertical-align: middle; }
+  td:first-child {
+    padding-left: 20px; }
+  td:last-child {
+    padding-right: 20px; }
 
 html {
   position: relative;

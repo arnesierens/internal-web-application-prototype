@@ -40,5 +40,13 @@ td {
     padding: 10px;
     border-bottom: 1px solid $color-border;
     vertical-align: middle;
+    
+    &:first-child {
+        padding-left: 20px;
+    }
+    
+    &:last-child {
+        padding-right: 20px;
+    }
 }
 

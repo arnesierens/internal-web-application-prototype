@@ -2320,7 +2320,7 @@ input {
   -moz-border-radius: 3px;
   border-radius: 3px; }
   input:focus {
-    border-color: #6c6c6c; }
+    border-color: #547EE4; }
 
 div[role="search"] {
   float: left;
@@ -2401,7 +2401,7 @@ select {
   -moz-border-radius: 3px;
   border-radius: 3px; }
   select:focus {
-    border-color: #6c6c6c; }
+    border-color: #547EE4; }
 
 input[type="checkbox"] {
   border: 1px solid #e5e5e5;

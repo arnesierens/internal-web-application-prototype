@@ -8,6 +8,6 @@ select {
     @include rounded($border-radius);
     
     &:focus {
-        border-color: $color-main;
+        border-color: $color-link;
     }
 }

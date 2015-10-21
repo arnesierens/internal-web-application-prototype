@@ -28,6 +28,11 @@ nav {
         > a {
             display: block;
             color: $color-main;
+            
+            > span {
+                font-size: em(12, 14);
+                font-weight: $bold;
+            }
         }
     }
 }

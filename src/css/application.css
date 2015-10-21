@@ -2536,6 +2536,9 @@ nav {
     .nav-main > li > a {
       display: block;
       color: #6c6c6c; }
+      .nav-main > li > a > span {
+        font-size: 0.85714em;
+        font-weight: 700; }
 
 .nav-main-user {
   float: right;

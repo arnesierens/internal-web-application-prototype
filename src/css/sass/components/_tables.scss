@@ -19,16 +19,12 @@ th {
     padding: 10px;
     text-align: left;
     text-transform: uppercase;
-    background-color: $color-background;
+    background-color: $color-background-app-title;
     border-bottom: 1px solid $color-border;
     
     a {
-        color: $color-main;
+        color: $color-titles;
         border: 0;
-        
-        &.sorted {
-            color: $color-titles;
-        }
         
         > .sort-down {
             margin-left: 3px;

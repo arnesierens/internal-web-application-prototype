@@ -11,7 +11,7 @@
     font-weight: $bold;
     line-height: 20px;
     padding: 10px 20px;
-    background-color: $color-background;
+    background-color: $color-background-app-title;
     border: 1px solid $color-border;
     @include rounded($border-radius, $border-radius, 0, 0);
 }

@@ -2087,6 +2087,7 @@ table {
 /* light gray */
 /* white */
 /* light gray */
+/* light light purple */
 .column-small-left {
   width: 22.72727%;
   float: left; }
@@ -2461,13 +2462,11 @@ th {
   padding: 10px;
   text-align: left;
   text-transform: uppercase;
-  background-color: #f8f8f8;
+  background-color: #edecf2;
   border-bottom: 1px solid #e5e5e5; }
   th a {
-    color: #6c6c6c;
+    color: #353535;
     border: 0; }
-    th a.sorted {
-      color: #353535; }
     th a > .sort-down {
       margin-left: 3px; }
 
@@ -2679,7 +2678,7 @@ footer {
   font-weight: 700;
   line-height: 20px;
   padding: 10px 20px;
-  background-color: #f8f8f8;
+  background-color: #edecf2;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 3px 3px 0 0;
   -moz-border-radius: 3px 3px 0 0;

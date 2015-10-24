@@ -32,7 +32,26 @@
 }
 
 .employees-filter-item {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
+    label, legend {
+        display: block;
+        font-weight: $bold;
+        padding-bottom: 3px;
+    }
+    
+    .label-checkbox {
+        font-weight: $regular;
+        
+        input[type="checkbox"] {
+            vertical-align: middle;
+        }
+    }
+    
+    .help {
+        font-size: em(13, 14);
+        margin-top:3px;
+    }
 }
 
 // Employees search
@@ -92,6 +111,10 @@
         height: 32px;
         vertical-align: middle;
     }
+}
+
+.employees-list-name {
+    font-weight: $bold;
 }
 
 .employees-load {

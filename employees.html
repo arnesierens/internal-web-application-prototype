@@ -321,18 +321,41 @@
                             <label for="filter-department">Department</label>
 
                             <select id="filter-department">
-                                <option value="-1">Choose a department</option>
+                                <option value="-1">All departments</option>
                                 <option value="1" selected="selected">Accountancy</option>
                                 <option value="2">Catering</option>
                                 <option value="3">IT</option>
                             </select>
                         </div>
+                        
+                        <div class="employees-filter-item">
+                            <label for="filter-role">Role</label>
+
+                            <select id="filter-role">
+                                <option value="-1">All roles</option>
+                                <option value="1">Employee</option>
+                                <option value="2">Intern</option>
+                                <option value="3">Subsitute</option>
+                                <option value="3">Volunteer</option>
+                            </select>
+                        </div>
+                        
+                        <div class="employees-filter-item">
+                            <label for="filter-role">Location</label>
+
+                            <input type="text" placeholder="All">
+                            <p class="help">Enter a city, region or country.</p>
+                        </div>
 
                         <div class="employees-filter-item">
-                            <label>
-                                <input type="checkbox">
-                                Show only former employees
-                            </label>
+                            <fieldset>
+                                <legend>Show</legend>
+                                
+                                <label class="label-checkbox">
+                                    <input type="checkbox">
+                                    only former employees
+                                </label>
+                            </fieldset>
                         </div>
 
                         <input type="submit" value="Search">
@@ -392,7 +415,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -406,7 +429,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -420,7 +443,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -434,7 +457,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -448,7 +471,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -462,7 +485,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -476,7 +499,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -490,7 +513,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -504,7 +527,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>
@@ -518,7 +541,7 @@
                         <td class="employees-list-avatar">
                             <img  src="src/img/avatar.png" alt="Arne Sierens">
                         </td>
-                        <td>
+                        <td class="employees-list-name">
                             <a href="#">Sierens Arne</a>
                         </td>
                         <td>IT</td>

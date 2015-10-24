@@ -2430,7 +2430,7 @@ input[type="submit"] {
   background-color: #fff;
   line-height: 20px;
   margin-top: 5px;
-  padding: 7px 43px 7px 10px;
+  padding: 6px 43px 6px 10px;
   border: 1px solid #e5e5e5;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -2442,7 +2442,7 @@ input[type="submit"] {
       top: 0;
       right: 0;
       line-height: 20px;
-      padding: 7px;
+      padding: 6px;
       border-left: 1px solid #e5e5e5; }
 
 table {
@@ -2716,7 +2716,18 @@ footer {
     box-sizing: border-box; }
 
 .employees-filter-item {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
+  .employees-filter-item label, .employees-filter-item legend {
+    display: block;
+    font-weight: 700;
+    padding-bottom: 3px; }
+  .employees-filter-item .label-checkbox {
+    font-weight: 400; }
+    .employees-filter-item .label-checkbox input[type="checkbox"] {
+      vertical-align: middle; }
+  .employees-filter-item .help {
+    font-size: 0.92857em;
+    margin-top: 3px; }
 
 .employees-search {
   position: relative;
@@ -2764,6 +2775,9 @@ footer {
     width: 32px;
     height: 32px;
     vertical-align: middle; }
+
+.employees-list-name {
+  font-weight: 700; }
 
 .employees-load {
   box-sizing: border-box;

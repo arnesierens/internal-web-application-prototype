@@ -2190,11 +2190,13 @@ h2 {
 
 .dropdown-apps {
   width: 200px;
-  z-index: 100; }
+  z-index: 100;
+  left: 50%;
+  transform: translateX(-50%); }
   .dropdown-apps:before {
-    left: 12px; }
+    left: 93px; }
   .dropdown-apps:after {
-    left: 12px; }
+    left: 93px; }
 
 .dropdown-help {
   width: 200px;

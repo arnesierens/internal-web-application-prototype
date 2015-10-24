@@ -84,13 +84,15 @@
 .dropdown-apps {
     width: 200px;
     z-index: 100;
+    left: 50%;
+    transform: translateX(-50%);
     
     &:before {
-        left: 12px;
+        left: 93px;
     }
     
     &:after {
-        left: 12px;
+        left: 93px;
     }
 }
 

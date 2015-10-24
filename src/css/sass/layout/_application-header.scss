@@ -6,6 +6,7 @@
 
 .application-header {
     width: 100%;
+    background-color: $color-brand;
     
     > header {
         max-width: $width-main;
@@ -22,6 +23,7 @@
     float: right;
     
     > span {
+        color: #fff;
         margin-right: 10px;
     }
     

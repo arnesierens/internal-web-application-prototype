@@ -1,7 +1,14 @@
 .breadcrumb {
+    color: #fff;
     
     > li {
         display: inline-block;
+        
+        > a {
+            color: #fff;
+            font-weight: $bold;
+            border-bottom-color: #fff;
+        }
     }
     
     > li + li::before {

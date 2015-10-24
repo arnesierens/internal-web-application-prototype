@@ -2079,15 +2079,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/**
+ * Typography
+ */
+/**
+ * Logo
+ */
+/**
+ * Links
+ */
+/**
+ * Dimensions
+ */
+/**
+ * Header
+ */
+/**
+ * Navigation
+ */
+/**
+ * Footer
+ */
+/**
+ * Searchbox main
+ */
+/**
+ * Colors
+ */
 /* gray */
 /* purple */
 /* blue */
 /* light gray */
 /* dark gray */
-/* light gray */
+/* light light gray */
 /* white */
-/* light gray */
-/* light light purple */
+/* light light light gray */
+/* light light gray-purple */
+/**
+ * Border-radius
+ */
 .column-small-left {
   width: 22.72727%;
   float: left; }

@@ -1,57 +1,87 @@
-// Font
+/**
+ * Typography
+ */
+
 $font-main:                 'PT Sans', Helvetica, Arial, sans-serif;
 $font-application-title:    'Roboto', Helvetica, Arial, sans-serif;
 
-// Font weights
 $regular:   400;
 $medium:    500;
 $bold:      700;
 
-// Logo
+
+/**
+ * Logo
+ */
+
 $width-logo:    40px;
 $height-logo:   40px;
 $url-logo:      '../img/temp-logo.png';
 
-// Link tags
-$a-tags: 'a, a:link, a:visited, a:focus';
-$a-tags-hover: 'a:hover, a:active';
 
-// Dimensions
+/**
+ * Links
+ */
+
+$a-tags:        'a, a:link, a:visited, a:focus';
+$a-tags-hover:  'a:hover, a:active';
+
+
+/**
+ * Dimensions
+ */
+
 $width-main: 1100px;
-
-// Header
-$height-header: 81px;
-$height-header-inner: 40px;
-
-// Search
-$width-searchbox: 300px;
-
-// Footer
-$height-footer: 200px;
-
-// Nav
-$height-main-nav: 40px;
-
-// Margin & padding
 $padding-main-horizontal: 20px;
 $padding-main-vertical: 40px;
 
 
-// Colors
+/**
+ * Header
+ */
+
+$height-header: 81px;
+$height-header-inner: 40px;
+
+
+/**
+ * Navigation
+ */
+$height-main-nav: 40px;
+
+
+/**
+ * Footer
+ */
+$height-footer: 200px;
+
+
+/**
+ * Searchbox main
+ */
+$width-searchbox: 300px;
+
+
+/**
+ * Colors
+ */
 $color-main:    #6c6c6c;    /* gray */
 $color-brand:   #594491;    /* purple */
 $color-link:    #547EE4;    /* blue */
 $color-border:  #e5e5e5;    /* light gray */
-$color-titles:    #353535;    /* dark gray */
+$color-titles:  #353535;    /* dark gray */
 
-$color-background: #f8f8f8; /* light gray */
-$color-background-header: #fff; /* white */
-$color-background-application-nav: #fbfbfb; /* light gray */
-$color-background-app-title: #edecf2; /* light light purple */
+// backgrounds
+$color-background: #f8f8f8;                 /* light light gray */
+$color-background-header: #fff;             /* white */
+$color-background-application-nav: #fbfbfb; /* light light light gray */
+$color-background-app-title: #edecf2;       /* light light gray-purple */
 
-$color-button: #2ebf6c;
-
+// social
 $color-fb: #3B5998;
 
-// Borders
+
+/**
+ * Border-radius
+ */
 $border-radius: 3px;

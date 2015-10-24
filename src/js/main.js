@@ -31,4 +31,21 @@ $(document).ready(function() {
 //            $('#header-messages-dropdown').hide();
 //        }
     });
+    
+    
+    // Back to top button
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 100) {
+            $('#js-back-to-top').show();
+        } else {
+            $('#js-back-to-top').hide();
+        }
+    });
+    
+    $('#js-back-to-top').click(function() {
+        $('body, html').animate({
+            scrollTop: 0
+        }, 300);
+        return false;
+    });
 });

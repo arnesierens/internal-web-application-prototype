@@ -1,0 +1,17 @@
+.back-to-top {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 12px;
+    color: #fff;
+    background-color: $color-brand;
+    opacity: 0.8;
+    border: 0;
+    @include rounded($border-radius);
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+

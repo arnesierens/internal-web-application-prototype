@@ -14,22 +14,22 @@ $(document).ready(function() {
         e.preventDefault();
         $('#js-user-profile-dropdown').toggle();
     });
-//    
-//    // Messages dropdown
-//    $('#header-messages').click(function(e) {
-//        e.preventDefault();
-//        $('#header-messages-dropdown').toggle();
-//    });
-//    
-//    // Hide profile dropdown if click is outside of dropdown
+    
+    // Messages dropdown
+    $('#js-messages-main').click(function(e) {
+        e.preventDefault();
+        $('#js-messages-main-dropdown').toggle();
+    });
+    
+    // Hide profile dropdown if click is outside of dropdown
     $(document).on('click', function(e) {
         if (!$(e.target).closest('#js-user-profile').length) {
             $('#js-user-profile-dropdown').hide();
         }
         
-//        if(!$(e.target).closest('#header-messages').length) {
-//            $('#header-messages-dropdown').hide();
-//        }
+        if(!$(e.target).closest('#js-messages-main').length) {
+            $('#js-messages-main-dropdown').hide();
+        }
     });
     
     

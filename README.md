@@ -1,6 +1,6 @@
 # internal-web-application-prototype
 
-Prototype of an internal web application for development centres.
+This was a personal exercise to test a SASS architecture.
 
 ## Requirements
 
